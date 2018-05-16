@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>小鱼博客</title>
+ <meta name="关键字" content="">
+ <meta name="Keywords" content="个人网站,小鱼博客,小鱼网站,小鱼,个人网站">
+ <meta name="description" content="小鱼博客是一个分享技术文章、个人生活的网站">
+ <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+ <link href="__CSS__/buju.css" rel="stylesheet">
+ <link href="__CSS__/index.css" rel="stylesheet">
+ <script type="text/javascript" src="__JS__/jquery.min.js"></script>
+ <script type="text/javascript" src="__JS__/sliders.js"></script>
+</head>
+<body>
+  <include file="Public:header" />
+  <article>
+    <div class="l_box f_l">
+       <input type="hidden" id="b_name">
+       <input type="hidden" id="b_img">
+  	   <div class="topnews">
+    	    <h2>留言</h2>
+          <div class="comment">
+              <div class="com_form">
+                <textarea class="input" id="saytext" name="saytext"></textarea>
+                <p>
+                  <input type="button" class="sub_btn" value="提交">
+                  <span class="emotion"></span>
+                </p>
+              </div>
+          </div>
+          <if condition="($num gt 0)">
+            <div class="board">
+              <div class="titles">
+                 <div class="lt">评论</div>
+                 <div class="rt"><span>{$num}</span>人参与,<span>{$num}</span>条评论</div>
+              </div>
+              <volist name="list" id="vo">
+                 <div class="bList">
+                     <div class="lItem">
+                         <img src="{$vo.b_img}" class="logo">
+                         <div class="lCont">
+                            <p class="p1">
+                              <span class="s1"><b class="name">{$vo.b_name}</b>[{$vo.b_ip|getIp}]</span>
+                              <span class="s2">{$vo.b_time|getTime}</span>
+                            </p>
+                            <p class="p2">{$vo.b_content|reFace}</p>
+                         </div>
+                     </div>
+                     <notempty name="vo['b_retime']">
+                     <div class="lItem rItem">
+                       <img src="__IMG__/photo.jpg" class="logo">
+                       <div class="lCont">
+                          <p class="p1">
+                            <span class="s1"><b class="name">{$vo.b_rename}</b>回复<b class="name1">{$vo.b_name}</b></span>
+                            <span class="s2">{$vo.b_retime|getTime}</span>
+                          </p>
+                          <p class="p2">{$vo.b_recontent|reFaceMy}</p>
+                       </div>
+                     </div>
+                     </notempty>
+                  </div>
+              </volist>
+            </div>
+          </if>
+  	   </div><!--topnews-->
+	  </div><!--l_box f_l-->
+    <include file="Public:right" />
+  </article>
+<include file="Public:footer" />
+</body>
+</html>
+<script type="text/javascript" src="__JS__/jquery.qqFace.js"></script>
+<script type="text/javascript">
+$(function(){
+  $('.emotion').qqFace({
+    id : 'facebox', 
+    assign:'saytext', 
+    path:'/Public/Home/arclist/'
+  });
+
+  $(".sub_btn").click(function(){
+     var b_name = $('#b_name').val();
+     var b_img = $('#b_img').val();
+     var b_content = $('#saytext').val();
+     if(b_name == ''){
+        b_name = '游客';
+     }
+     if(b_img == ''){
+      b_img = '/Public/Home/img/default.png';
+     }
+     if(b_content == ''){
+        alert('评论内容不能为空');
+        return false;
+     }
+     $('#sub_btn').attr('disabled',true);
+     $.ajax({
+       url: '/Admin/Board/add',
+       type: 'post',
+       data: {'b_name':b_name, 'b_img':b_img, 'b_content':b_content},
+       success: function(data){
+          if(data.error == 0){
+             window.location.reload();
+          }else{
+             alert(data.msg);
+             $('#sub_btn').removeAttr('disabled');
+          }
+       }
+     })
+  });
+});
+function replace_em(str){
+  str = str.replace(/\</g,'&lt;');
+  str = str.replace(/\>/g,'&gt;');
+  str = str.replace(/\n/g,'<br/>');
+  str = str.replace(/\[em_([0-9]*)\]/g,'<img src="/Public/Home/arclist/$1.gif" border="0"/>');
+  return str;
+}
+</script>

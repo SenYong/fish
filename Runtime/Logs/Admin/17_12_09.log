@@ -1,0 +1,464 @@
+[ 2017-12-09T20:36:31+08:00 ] 112.94.190.31 /Admin/Board/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set() has been disabled for security reasons E:\web\lykl812j\WwwRoot\ThinkPHP\Common\functions.php 第 1236 行.
+SQL: SHOW COLUMNS FROM `fh_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_user` WHERE `u_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_say_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_say_c` WHERE ( sc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_article_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article_c` WHERE ( ac_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_log_c` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_log_c` WHERE ( lc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_board` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_board` WHERE ( b_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_board` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate E:\web\lykl812j\WwwRoot\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\web\lykl812j\WwwRoot\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fh_board` (`b_name`,`b_img`,`b_content`,`b_time`,`b_ip`,`b_system`) VALUES ('游客','/Public/Home/img/default.png','很好[em_28]','1512822991','112.94.190.31','Win 10') [ RunTime:0.0000s ]
+
+[ 2017-12-09T20:36:33+08:00 ] 112.94.190.31 /Admin/Board/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set() has been disabled for security reasons E:\web\lykl812j\WwwRoot\ThinkPHP\Common\functions.php 第 1236 行.
+SQL: SHOW COLUMNS FROM `fh_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_user` WHERE `u_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_say_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_say_c` WHERE ( sc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_article_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article_c` WHERE ( ac_retime is null ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `fh_log_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_log_c` WHERE ( lc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_board` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_board` WHERE ( b_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_board` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate E:\web\lykl812j\WwwRoot\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\web\lykl812j\WwwRoot\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fh_board` (`b_name`,`b_img`,`b_content`,`b_time`,`b_ip`,`b_system`) VALUES ('游客','/Public/Home/img/default.png','很好[em_28]','1512822993','112.94.190.31','Win 10') [ RunTime:0.0000s ]
+
+[ 2017-12-09T20:37:26+08:00 ] 112.94.190.31 /Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set() has been disabled for security reasons E:\web\lykl812j\WwwRoot\ThinkPHP\Common\functions.php 第 1236 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-09T20:37:59+08:00 ] 112.94.190.31 /Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set() has been disabled for security reasons E:\web\lykl812j\WwwRoot\ThinkPHP\Common\functions.php 第 1236 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-09T20:38:11+08:00 ] 112.94.190.31 /Admin/Login/in
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set() has been disabled for security reasons E:\web\lykl812j\WwwRoot\ThinkPHP\Common\functions.php 第 1236 行.
+SQL: SHOW COLUMNS FROM `fh_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_user` WHERE `u_name` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `fh_user` SET `u_logintime`='1512823091' WHERE `u_id` = 1 [ RunTime:0.0000s ]
+SQL: UPDATE `fh_user` SET `u_num`=u_num+1 WHERE `u_id` = 1 [ RunTime:0.0000s ]
+
+[ 2017-12-09T20:38:14+08:00 ] 112.94.190.31 /Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set() has been disabled for security reasons E:\web\lykl812j\WwwRoot\ThinkPHP\Common\functions.php 第 1236 行.
+SQL: SHOW COLUMNS FROM `fh_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_user` WHERE `u_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_say_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_say_c` WHERE ( sc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_article_c` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article_c` WHERE ( ac_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_log_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_log_c` WHERE ( lc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_board` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_board` WHERE ( b_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_user` WHERE ( u_class < 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_user` WHERE `u_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_say` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_log` WHERE `l_show` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_board` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: art E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 94 行.
+NOTIC: [8] Undefined variable: artitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 96 行.
+NOTIC: [8] Undefined variable: sayitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 98 行.
+NOTIC: [8] Undefined variable: logitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 100 行.
+NOTIC: [8] Undefined variable: artlist E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 103 行.
+NOTIC: [8] Undefined variable: artL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 105 行.
+NOTIC: [8] Undefined variable: sayL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 107 行.
+NOTIC: [8] Undefined variable: logL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 109 行.
+NOTIC: [8] Undefined variable: cat E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 112 行.
+NOTIC: [8] Undefined variable: catitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 114 行.
+NOTIC: [8] Undefined variable: catlist E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 116 行.
+NOTIC: [8] Undefined variable: user E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 121 行.
+NOTIC: [8] Undefined variable: comment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 122 行.
+NOTIC: [8] Undefined variable: saycomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 124 行.
+NOTIC: [8] Undefined variable: artcomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 126 行.
+NOTIC: [8] Undefined variable: logcomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 128 行.
+NOTIC: [8] Undefined variable: boardcomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 130 行.
+NOTIC: [8] Undefined variable: system E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 133 行.
+NOTIC: [8] Undefined variable: album E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 136 行.
+NOTIC: [8] Undefined variable: picture E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 143 行.
+NOTIC: [8] Undefined variable: info E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 310 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-09T20:38:38+08:00 ] 112.94.190.31 /Admin/Say/sayContentList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set() has been disabled for security reasons E:\web\lykl812j\WwwRoot\ThinkPHP\Common\functions.php 第 1236 行.
+SQL: SHOW COLUMNS FROM `fh_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_user` WHERE `u_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_say_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_say_c` WHERE ( sc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_article_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article_c` WHERE ( ac_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_log_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_log_c` WHERE ( lc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_board` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_board` WHERE ( b_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_say_c` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_say_c` ORDER BY sc_time desc LIMIT 0,25   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: index E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 91 行.
+NOTIC: [8] Undefined variable: art E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 94 行.
+NOTIC: [8] Undefined variable: artitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 96 行.
+NOTIC: [8] Undefined variable: sayitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 98 行.
+NOTIC: [8] Undefined variable: logitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 100 行.
+NOTIC: [8] Undefined variable: artlist E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 103 行.
+NOTIC: [8] Undefined variable: artL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 105 行.
+NOTIC: [8] Undefined variable: sayL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 107 行.
+NOTIC: [8] Undefined variable: logL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 109 行.
+NOTIC: [8] Undefined variable: cat E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 112 行.
+NOTIC: [8] Undefined variable: catitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 114 行.
+NOTIC: [8] Undefined variable: catlist E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 116 行.
+NOTIC: [8] Undefined variable: user E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 121 行.
+NOTIC: [8] Undefined variable: artcomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 126 行.
+NOTIC: [8] Undefined variable: logcomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 128 行.
+NOTIC: [8] Undefined variable: boardcomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 130 行.
+NOTIC: [8] Undefined variable: system E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 133 行.
+NOTIC: [8] Undefined variable: album E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 136 行.
+NOTIC: [8] Undefined variable: picture E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 143 行.
+NOTIC: [8] Undefined variable: info E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 263 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-09T20:38:53+08:00 ] 112.94.190.31 /Admin/Board/boardContentList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set() has been disabled for security reasons E:\web\lykl812j\WwwRoot\ThinkPHP\Common\functions.php 第 1236 行.
+SQL: SHOW COLUMNS FROM `fh_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_user` WHERE `u_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_say_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_say_c` WHERE ( sc_retime is null ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `fh_article_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article_c` WHERE ( ac_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_log_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_log_c` WHERE ( lc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_board` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_board` WHERE ( b_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_board` ORDER BY b_time desc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_board` ORDER BY b_id desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: index E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 91 行.
+NOTIC: [8] Undefined variable: art E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 94 行.
+NOTIC: [8] Undefined variable: artitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 96 行.
+NOTIC: [8] Undefined variable: sayitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 98 行.
+NOTIC: [8] Undefined variable: logitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 100 行.
+NOTIC: [8] Undefined variable: artlist E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 103 行.
+NOTIC: [8] Undefined variable: artL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 105 行.
+NOTIC: [8] Undefined variable: sayL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 107 行.
+NOTIC: [8] Undefined variable: logL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 109 行.
+NOTIC: [8] Undefined variable: cat E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 112 行.
+NOTIC: [8] Undefined variable: catitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 114 行.
+NOTIC: [8] Undefined variable: catlist E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 116 行.
+NOTIC: [8] Undefined variable: user E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 121 行.
+NOTIC: [8] Undefined variable: saycomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 124 行.
+NOTIC: [8] Undefined variable: artcomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 126 行.
+NOTIC: [8] Undefined variable: logcomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 128 行.
+NOTIC: [8] Undefined variable: system E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 133 行.
+NOTIC: [8] Undefined variable: album E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 136 行.
+NOTIC: [8] Undefined variable: picture E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 143 行.
+NOTIC: [8] Undefined index: sc_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 179 行.
+NOTIC: [8] Undefined index: sc_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 179 行.
+NOTIC: [8] Undefined index: sc_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 179 行.
+NOTIC: [8] Undefined index: sc_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 179 行.
+NOTIC: [8] Undefined index: sc_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 179 行.
+NOTIC: [8] Undefined index: sc_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 179 行.
+NOTIC: [8] Undefined index: sc_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 179 行.
+NOTIC: [8] Undefined index: sc_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 179 行.
+NOTIC: [8] Undefined variable: info E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 263 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-09T20:39:18+08:00 ] 112.94.190.31 /index.php/Admin/Board/boardContentEdit/id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set() has been disabled for security reasons E:\web\lykl812j\WwwRoot\ThinkPHP\Common\functions.php 第 1236 行.
+SQL: SHOW COLUMNS FROM `fh_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_user` WHERE `u_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_say_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_say_c` WHERE ( sc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_article_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article_c` WHERE ( ac_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_log_c` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_log_c` WHERE ( lc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_board` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_board` WHERE ( b_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_board` WHERE `b_id` = 8 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: index E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 91 行.
+NOTIC: [8] Undefined variable: art E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 94 行.
+NOTIC: [8] Undefined variable: artitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 96 行.
+NOTIC: [8] Undefined variable: sayitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 98 行.
+NOTIC: [8] Undefined variable: logitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 100 行.
+NOTIC: [8] Undefined variable: artlist E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 103 行.
+NOTIC: [8] Undefined variable: artL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 105 行.
+NOTIC: [8] Undefined variable: sayL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 107 行.
+NOTIC: [8] Undefined variable: logL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 109 行.
+NOTIC: [8] Undefined variable: cat E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 112 行.
+NOTIC: [8] Undefined variable: catitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 114 行.
+NOTIC: [8] Undefined variable: catlist E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 116 行.
+NOTIC: [8] Undefined variable: user E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 121 行.
+NOTIC: [8] Undefined variable: saycomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 124 行.
+NOTIC: [8] Undefined variable: artcomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 126 行.
+NOTIC: [8] Undefined variable: logcomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 128 行.
+NOTIC: [8] Undefined variable: boardcomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 130 行.
+NOTIC: [8] Undefined variable: system E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 133 行.
+NOTIC: [8] Undefined variable: album E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 136 行.
+NOTIC: [8] Undefined variable: picture E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 143 行.
+NOTIC: [8] Undefined index: u_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88e756cc9dacf57ad03c70a77f2daa85.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-09T20:40:01+08:00 ] 112.94.190.31 /Admin/Board/boardContentModify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set() has been disabled for security reasons E:\web\lykl812j\WwwRoot\ThinkPHP\Common\functions.php 第 1236 行.
+SQL: SHOW COLUMNS FROM `fh_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_user` WHERE `u_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_say_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_say_c` WHERE ( sc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_article_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article_c` WHERE ( ac_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_log_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_log_c` WHERE ( lc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_board` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_board` WHERE ( b_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_board` [ RunTime:0.0000s ]
+SQL: UPDATE `fh_board` SET `b_rename`='admin',`b_reimg`='/Public/Home/img/default.png',`b_recontent`='没什么[mr:/1]',`b_retime`='1512823201' WHERE `b_id` = 8 [ RunTime:0.0000s ]
+
+[ 2017-12-09T20:40:04+08:00 ] 112.94.190.31 /Admin/Board/boardContentList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set() has been disabled for security reasons E:\web\lykl812j\WwwRoot\ThinkPHP\Common\functions.php 第 1236 行.
+SQL: SHOW COLUMNS FROM `fh_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_user` WHERE `u_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_say_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_say_c` WHERE ( sc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_article_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article_c` WHERE ( ac_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_log_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_log_c` WHERE ( lc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_board` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_board` WHERE ( b_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_board` ORDER BY b_time desc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_board` ORDER BY b_id desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: index E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 91 行.
+NOTIC: [8] Undefined variable: art E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 94 行.
+NOTIC: [8] Undefined variable: artitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 96 行.
+NOTIC: [8] Undefined variable: sayitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 98 行.
+NOTIC: [8] Undefined variable: logitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 100 行.
+NOTIC: [8] Undefined variable: artlist E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 103 行.
+NOTIC: [8] Undefined variable: artL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 105 行.
+NOTIC: [8] Undefined variable: sayL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 107 行.
+NOTIC: [8] Undefined variable: logL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 109 行.
+NOTIC: [8] Undefined variable: cat E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 112 行.
+NOTIC: [8] Undefined variable: catitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 114 行.
+NOTIC: [8] Undefined variable: catlist E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 116 行.
+NOTIC: [8] Undefined variable: user E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 121 行.
+NOTIC: [8] Undefined variable: saycomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 124 行.
+NOTIC: [8] Undefined variable: artcomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 126 行.
+NOTIC: [8] Undefined variable: logcomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 128 行.
+NOTIC: [8] Undefined variable: system E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 133 行.
+NOTIC: [8] Undefined variable: album E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 136 行.
+NOTIC: [8] Undefined variable: picture E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 143 行.
+NOTIC: [8] Undefined index: sc_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 179 行.
+NOTIC: [8] Undefined index: sc_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 179 行.
+NOTIC: [8] Undefined index: sc_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 179 行.
+NOTIC: [8] Undefined index: sc_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 179 行.
+NOTIC: [8] Undefined index: sc_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 179 行.
+NOTIC: [8] Undefined index: sc_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 179 行.
+NOTIC: [8] Undefined index: sc_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 179 行.
+NOTIC: [8] Undefined index: sc_id E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 179 行.
+NOTIC: [8] Undefined variable: info E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\88bad5fe0a0d6af0e65996ae1126ab7e.php 第 263 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-09T20:44:48+08:00 ] 112.94.190.31 /Admin/Say/sayContentList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] ini_set() has been disabled for security reasons E:\web\lykl812j\WwwRoot\ThinkPHP\Common\functions.php 第 1236 行.
+SQL: SHOW COLUMNS FROM `fh_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_user` WHERE `u_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_say_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_say_c` WHERE ( sc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_article_c` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article_c` WHERE ( ac_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_log_c` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_log_c` WHERE ( lc_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fh_board` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_board` WHERE ( b_retime is null ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_say_c` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fh_say_c` ORDER BY sc_time desc LIMIT 0,25   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: index E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 91 行.
+NOTIC: [8] Undefined variable: art E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 94 行.
+NOTIC: [8] Undefined variable: artitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 96 行.
+NOTIC: [8] Undefined variable: sayitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 98 行.
+NOTIC: [8] Undefined variable: logitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 100 行.
+NOTIC: [8] Undefined variable: artlist E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 103 行.
+NOTIC: [8] Undefined variable: artL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 105 行.
+NOTIC: [8] Undefined variable: sayL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 107 行.
+NOTIC: [8] Undefined variable: logL E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 109 行.
+NOTIC: [8] Undefined variable: cat E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 112 行.
+NOTIC: [8] Undefined variable: catitem E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 114 行.
+NOTIC: [8] Undefined variable: catlist E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 116 行.
+NOTIC: [8] Undefined variable: user E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 121 行.
+NOTIC: [8] Undefined variable: artcomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 126 行.
+NOTIC: [8] Undefined variable: logcomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 128 行.
+NOTIC: [8] Undefined variable: boardcomment E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 130 行.
+NOTIC: [8] Undefined variable: system E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 133 行.
+NOTIC: [8] Undefined variable: album E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 136 行.
+NOTIC: [8] Undefined variable: picture E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 143 行.
+NOTIC: [8] Undefined variable: info E:\web\lykl812j\WwwRoot\Runtime\Cache\Admin\503517b5762dddab8f463c8c65d54ec2.php 第 263 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

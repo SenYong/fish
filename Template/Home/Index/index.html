@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>小鱼博客</title>
+ <meta name="Keywords" content="个人网站,小鱼博客,小鱼网站,小鱼,个人网站">
+ <meta name="description" content="小鱼博客是一个分享技术文章、个人生活的网站">
+ <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+ <link href="__CSS__/buju.css" rel="stylesheet">
+ <link href="__CSS__/index.css" rel="stylesheet">
+ <script type="text/javascript" src="__JS__/jquery.min.js"></script>
+ <script type="text/javascript" src="__JS__/sliders.js"></script>
+</head>
+<body>
+  <include file="Public:header" />
+  <article>
+    <div class="l_box f_l">
+  	  <div class="banner">
+  	    <div id="slide-holder">
+    		   <div id="slide-runner">
+      		    <a href="/" target="_blank">
+      			      <img id="slide-img-1" src="__IMG__/a1.jpg">
+      			  </a>
+      			  <a href="/" target="_blank">
+      			      <img id="slide-img-2" src="__IMG__/a2.jpg">
+      			  </a>
+      			  <a href="/" target="_blank">
+      			      <img id="slide-img-3" src="__IMG__/a3.jpg">
+      			  </a>
+      			  <a href="/" target="_blank">
+      			      <img id="slide-img-4" src="__IMG__/a4.jpg">
+      			  </a>
+      			  <div id="slide-controls" style="display:block;">
+        			    <p id="slide-client" class="text">
+        				    <strong></strong>
+        					 <span></span>
+        				  </p>
+                  <p id="slide-desc" class="text"></p> 	
+                  <p id="slide-nav"></p>		     			  
+      			  </div>
+    		   </div> 
+  		  </div>
+	    </div>
+  	  <script>
+  	   if(!window.slider){
+  		    var slider={};
+  		 }
+  		 slider.data=[
+    		 {
+    		   "id":"slide-img-1", //与slide-runner中的img标签id对应
+    			 "client":"醉牛逼",
+    			 "desc":"醉牛逼是武魂醉牛逼的存在"     //这里描述图片内容
+    		 },
+    		 {
+    		   "id":"slide-img-2", 
+    			 "client":"醉牛逼",
+    			 "desc":"醉牛逼是武魂醉牛逼的存在"
+    		 },
+    		 {
+    		   "id":"slide-img-3", 
+    			 "client":"醉牛逼",
+    			 "desc":"醉牛逼是武魂醉牛逼的存在"
+    		 },
+    		 {
+    		   "id":"slide-img-4", 
+    			 "client":"醉牛逼",
+    			 "desc":"醉牛逼是武魂醉牛逼的存在"
+    		 }
+  		 ];
+  	  </script>
+	   <div class="topnews">
+  	    <h2>文章推荐</h2>
+        <volist name="artList" id="vo">
+  		    <div class="blogs">
+    		      <figure>
+    			      <img src="{$vo.a_img}">
+    			   </figure>
+    			   <ul>
+    			      <h3><a href="{:U('/artinfo-'.$vo['a_id'])}">{$vo.a_name}</a></h3>
+    				    <p>{$vo.a_desc}</p>
+    			      <p class="autor">
+      				    <span class="lm f_l">
+      					    <a href="/">{$vo.a_keyword}</a>
+      					 </span>
+    					   <span class="dtime f_l">{$vo.a_time|date="Y-m-d",###}</span>
+      					 <span class="viewnum f_r">
+      					    浏览（<a href="{:U('/artinfo-'.$vo['a_id'])}">{$vo.a_hit}</a>）
+                 </span>
+      					 <span class="pingl f_r">	
+      					    评论（<a href="{:U('/artinfo-'.$vo['a_id'])}">{$vo.a_num}</a>）
+                 </span>
+    				    </p>
+    			   </ul>
+  	      </div>
+        </volist>
+	   </div><!--topnews-->
+	  </div><!--l_box f_l-->
+    <include file="Public:right" />
+  </article>
+<include file="Public:footer" />
+</body>
+</html>

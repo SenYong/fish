@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>发布文章 - 小鱼博客管理系统</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/font-awesome.min.css">
+<link rel="apple-touch-icon-precomposed" href="__IMG__/icon/icon.png">
+<link rel="shortcut icon" href="__IMG__/icon/favicon.ico">
+<script src="__JS__/jquery-2.1.4.min.js"></script>
+</head>
+<body class="user-select">
+<section class="container-fluid">
+   <include file="Public:header" />
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-lg-10 col-md-offset-2 main" id="main">
+      <div class="row">
+        <div class="add-article-form">
+          <div class="col-md-9">
+              <h1 class="page-header">留言板评论回复</h1>
+              <input type="hidden" value="{$Think.session.uname}" id="b_rename">
+              <input type="hidden" value="{$Think.session.uimg}" id="b_reimg">
+              <input type="hidden" value="{$info.b_id}" id="b_id">
+              <h2 class="add-article-box-title"><span>用户名</span></h2>
+              <div class="form-group">
+                <div id="article-title" class="form-control">{$info.b_name}</div>
+              </div>
+              <div class="add-article-box">
+                <h2 class="add-article-box-title"><span>评论内容</span></h2>
+                <div class="add-article-box-content">
+                  <div class="form-control" id="desc">{$info.b_content|reFace|html_entity_decode}</div>
+                </div>
+              </div>
+              <h2 class="add-article-box-title"><span>评论时间</span></h2>
+              <div class="form-group"> 
+                 <div id="article-title" class="form-control">{$info.b_time|getTime}</div>
+              </div>
+              <h2 class="add-article-box-title"><span>回复内容</span></h2>
+              <div class="form sayForm" id="comment">
+                  <div class="warp_text">
+                      <textarea id="content-text" placeholder="回复些什么呢...">{$info.b_recontent}</textarea>
+                  </div>
+                  <div class="form-group home-from-box">
+                      <a href="javascript:void(0);" id="rl_exp_btn"><span class="emotion hidden-xs"></span></a>
+                      <div class="rl_exp" id="rl_bq" style="display:none;">
+                        <ul class="rl_exp_tab clearfix">
+                          <li><a href="javascript:void(0);" class="selected">默认</a></li>
+                          <li><a href="javascript:void(0);">拜年</a></li>
+                          <li><a href="javascript:void(0);">暴走漫画</a></li>
+                          <li><a href="javascript:void(0);">漫画</a></li>
+                        </ul>
+                        <ul class="rl_exp_main clearfix rl_selected"></ul>
+                        <ul class="rl_exp_main clearfix" style="display:none;"></ul>
+                        <ul class="rl_exp_main clearfix" style="display:none;"></ul>
+                        <ul class="rl_exp_main clearfix" style="display:none;"></ul>
+                        <a href="javascript:void(0);" class="close">×</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+            <h1 class="page-header">回复</h1>
+            <div class="add-article-box">
+              <h2 class="add-article-box-title"><span>回复</span></h2>
+              <div class="add-article-box-content">
+              	<p>
+                   <label>状态：</label>
+                   <empty name="info['b_retime']">
+                      <span class="article-status-display">未回复</span>
+                   <else/>
+                      <span class="article-status-display">已回复</span>
+                   </empty>
+                </p>
+                <p>
+                   <notempty name="info['b_retime']">
+                       <label>回复于:</label>
+                       <span class="article-time-display">
+                          <input style="border: none;" type="datetime" name="time" value="{$info['b_retime']|getTime}" disabled/>
+                       </span>
+                   </notempty>
+                </p>
+              </div>
+              <div class="add-article-box-footer">
+                  <button class="btn" type="button" style="margin-left: 20px;"><a href="/Admin/Board/boardContentList">取消</a></button>
+                  <button class="btn btn-primary" type="submit" name="submit" id="reBoard">回复</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<include file="Public:info" />
+<script src="__JS__/bootstrap.min.js"></script> 
+<script src="__JS__/admin-scripts.js"></script>
+<script src="__JS__/jquery.gritter.min.js"></script>
+<script src="__JS__/my.js"></script>
+<script src="__JS__/rl_exp.js"></script>
+<script type="text/javascript">
+$('#reBoard').click(function(){
+   var b_id = $('#b_id').val();
+   var b_recontent = $('#content-text').val();
+   var b_rename = $('#b_rename').val();
+   var b_reimg = $('#b_reimg').val();
+   if(b_recontent == ''){
+     error('回复内容不能为空');
+   }
+   if(b_reimg == ''){
+      b_reimg = '/Public/Home/img/default.png';
+   }
+   $('#reBoard').attr('disabled',true);
+   $.ajax({
+     url: '/Admin/Board/boardContentModify',
+     type: 'post',
+     async: true,
+     data: {'b_id':b_id, 'b_rename':b_rename, 'b_reimg':b_reimg, 'b_recontent':b_recontent},
+     success: function (data) {
+         if(data.error == 0){
+            success('',data.msg,'/Admin/Board/boardContentList');
+         }else{
+            error(data.msg);
+            $('#reBoard').removeAttr('disabled');
+         }
+     },
+     error: function(data){
+         error(data.msg);
+         $('#reBoard').removeAttr('disabled');  
+     }
+   })
+})
+</script>
+</body>
+</html>
+

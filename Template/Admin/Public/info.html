@@ -1,0 +1,206 @@
+<!--增加用户模态框-->
+<div class="modal fade" id="addUser" tabindex="-1" role="dialog" aria-labelledby="addUserModalLabel">
+  <div class="modal-dialog" role="document" style="max-width:450px;">
+    <div  draggable="false">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" >增加用户</h4>
+        </div>
+        <div class="modal-body">
+          <table class="table" style="margin-bottom:0px;">
+            <thead>
+              <tr> </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td wdith="20%">姓名:</td>
+                <td width="80%"><input type="text" value="" class="form-control" id="addRoot" /></td>
+              </tr>
+              <tr>
+                <td wdith="20%">权限:</td>
+                <td width="80%"><input type="text" value="" class="form-control" maxlength="10" id="addClass"/></td>
+              </tr>
+              <tr>
+                <td wdith="20%">用户名:</td>
+                <td width="80%"><input type="text" value="" class="form-control" id="addAdmin" /></td>
+              </tr>
+              <tr>
+                <td wdith="20%">邮箱:</td>
+                <td width="80%"><input type="text" value="" class="form-control" id="addEmail" /></td>
+              </tr>
+              <tr>
+                <td wdith="20%">新密码:</td>
+                <td width="80%"><input type="password" class="form-control" maxlength="18" id="addPassword" /></td>
+              </tr>
+              <tr>
+                <td wdith="20%">确认密码:</td>
+                <td width="80%"><input type="password" class="form-control" maxlength="18" id="addPasswords"/></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr></tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default default" data-dismiss="modal">取消</button>
+          <button type="submit" class="btn btn-primary adduser">提交</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--用户信息模态框-->
+<div class="modal fade" id="seeUser" tabindex="-1" role="dialog" aria-labelledby="seeUserModalLabel">
+  <div class="modal-dialog" role="document" style="max-width:450px;">
+    <div  autocomplete="off" draggable="false">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">修改用户</h4>
+        </div>
+        <div class="modal-body">
+            <table class="table" style="margin-bottom:0px;">
+                <thead>
+                  <tr> </tr>
+                </thead>
+                <tbody>
+                  <input type="hidden" id="uids"/>
+                  <tr>
+                    <td wdith="20%">姓名:</td>
+                    <td width="80%"><input type="text"  class="form-control" id="editRoot"/></td>
+                  </tr>
+                  <eq name="info['u_id']" value="1">
+                      <tr>
+                        <td wdith="20%">权限:</td>
+                        <td width="80%"><input type="text" class="form-control"  maxlength="10" id="editClass"/></td>
+                      </tr>
+                  </eq>
+                  <tr>
+                    <td wdith="20%">用户名:</td>
+                    <td width="80%"><input type="text"  class="form-control" id="editAdmin"/></td>
+                  </tr>
+                  <tr>
+                    <td wdith="20%">邮箱:</td>
+                    <td width="80%"><input type="text"  class="form-control" maxlength="13" id="editEmail"/></td>
+                  </tr>
+                  <tr>
+                    <td wdith="20%">旧密码:</td>
+                    <td width="80%"><input type="password" class="form-control" maxlength="18" id="editPassword"/></td>
+                  </tr>
+                  <tr>
+                    <td wdith="20%">新密码:</td>
+                    <td width="80%"><input type="password" class="form-control"  maxlength="18" id="newPassword"/></td>
+                  </tr>
+                  <tr>
+                    <td wdith="20%">确认密码:</td>
+                    <td width="80%"><input type="password" class="form-control"  maxlength="18" id="newPasswords"/></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr></tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="modal-footer">
+          <input type="hidden" name="userid"/>
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="submit" class="btn btn-primary modify">提交</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--个人信息模态框-->
+<div class="modal fade" id="seeUserInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <form action="" method="post" autocomplete="off" draggable="false">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" >个人信息</h4>
+        </div>
+        <div class="modal-body">
+          <table class="table" style="margin-bottom:0px;">
+            <tbody>
+                <tr>
+                  <td wdith="20%">姓名:</td>
+                  <td width="80%"><input type="text" value="{$userInfo.u_root}" class="form-control"/></td>
+                </tr>
+                <tr>
+                  <td wdith="20%">职位:</td>
+                  <td width="80%">
+                      <switch name="userInfo['u_class']">
+                         <case value="1"><input type="text" value="管理员" class="form-control"/></case>
+                         <case value="2"><input type="text" value="编辑" class="form-control"/></case>
+                         <default /><input type="text" value="游客" class="form-control"/>
+                      </switch>
+                  </td>
+                </tr>
+                <tr>
+                  <td wdith="20%">用户名:</td>
+                  <td width="80%"><input type="text" value="{$userInfo.u_name}" class="form-control"/></td>
+                </tr>
+                <tr>
+                  <td wdith="20%">邮箱:</td>
+                  <td width="80%"><input type="text" value="{$userInfo.u_email}" class="form-control"/></td>
+                </tr>
+            </tbody>
+            <tfoot>
+              <tr></tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!--个人登录记录模态框-->
+<div class="modal fade" id="seeUserLoginlog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" >登录记录</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table" style="margin-bottom:0px;">
+          <thead>
+            <tr>
+              <th>登录IP</th>
+              <th>登录时间</th>
+              <th>状态</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{$userInfo.u_ip}</td>
+              <td>{$userInfo.u_logintime|getTime}</td>
+              <notempty name="userInfo['u_id']"><td>成功</td></notempty >
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">朕已阅</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--微信二维码模态框-->
+<div class="modal fade user-select" id="WeChat" tabindex="-1" role="dialog" aria-labelledby="WeChatModalLabel">
+  <div class="modal-dialog" role="document" style="margin-top:120px;max-width:280px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="WeChatModalLabel" style="cursor:default;">微信扫一扫</h4>
+      </div>
+      <div class="modal-body" style="text-align:center"> <img src="__IMG__/weixin.jpg" alt="" style="cursor:pointer"/> </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,114 @@
+<div class="r_box f_r">
+   <div class="tit01">
+        <h3>关注我</h3>
+        <div class="gzwm">
+          <ul>
+           <li><a class="xlwb" href="https://weibo.com/u/1854068535" target="_blank">新浪微博</a></li>
+           <li><a class="txwb" href="http://t.qq.com/sen1157927284" target="_blank">腾讯微博</a></li>
+           <li><a class="rss" href="#" target="_blank">RSS</a></li>
+           <li><a class="wx" href="#" target="_blank">邮箱</a></li>
+          </ul>
+        </div>
+    </div> 
+    <div class="ad300x100">
+       <img src="__IMG__/wh.jpg">
+    </div>
+    <div class="tab" id="lp_right_select">    
+       <div class="tab-top">
+          <ul class="hd" id="tb">
+            <li class="cur"><a href="/">最新文章</a></li>
+            <li><a href="/">最新日志</a></li>
+            <li><a href="/">最新说说</a></li>
+        </ul>
+      </div>
+      <div class="tab-main" id="tb-main">
+          <div class="bd bd-news" style="display:block;">
+            <ul>
+              <volist name="tab1" id="vo">
+                <li><a href="{:U('/artinfo-'.$vo['a_id'])}">{$vo.a_name}</a></li>
+              </volist>
+            </ul>
+          </div>
+          <div class="bd bd-news" >
+             <ul>
+               <volist name="tab2" id="vo">
+                 <li><a href="{:U('/loginfo-'.$vo['l_id'])}">{$vo.l_name}</a></li>
+              </volist>
+            </ul>
+          </div>
+          <div class="bd bd-news" >
+              <ul>
+                <volist name="tab3" id="vo">
+                  <li><a href="{:U('/sayinfo-'.$vo['s_id'])}">{$vo.s_content}</a></li>
+                </volist>
+              </ul>
+          </div>
+      </div>
+    </div>
+    <div class="cloud">
+         <h3>标签云</h3>
+         <ul>
+           <!-- <li><a href="/">个人博客</a></li>
+           <li><a href="/">web开发</a></li>
+           <li><a href="/">前端设计</a></li>
+           <li><a href="/">Html</a></li>
+           <li><a href="/">CSS3</a></li>
+           <li><a href="/">CSS3+HTML5</a></li>
+           <li><a href="/">百度</a></li>
+           <li><a href="/">JavaScript</a></li>
+           <li><a href="/">C/C++</a></li>
+           <li><a href="/">ASP.NET</a></li>
+           <li><a href="/">IOS开发</a></li>
+           <li><a href="/">Android开发</a></li>
+           <li><a href="/">PHP</a></li>
+           <li><a href="/">VS</a></li> -->
+           <volist name="label" id="vo">
+              <li><a href="{:U('/cat-'.$vo['c_id'])}">{$vo.c_name}</a></li>
+           </volist>
+        </ul>
+    </div>
+    <div class="tuwen">
+        <h3>点击排行</h3>
+       <ul>
+          <volist name="text" id="vo">
+             <li><a href="{:U('/artinfo-'.$vo['a_id'])}"><img src="{$vo.a_img}"><b>{$vo.a_name}</b></a>
+                <p>
+                  <span class="tulanum"><a href="{:U('/cat-'.$vo['c_id'])}">{$vo.c_name}</a></span>
+                 <span class="tutime">{$vo.a_time|date="Y-m-d",###}</span>
+               </p>
+             </li>
+          </volist>
+       </ul>
+    </div>
+    <div class="ad"><img src="__IMG__/03.jpg"></div>
+    <div class="links">
+       <h3><span><a href="/">申请友情链接</a></span>友情链接</h3>
+       <ul>
+         <li><a href="/">醉牛逼的武魂生涯</a></li>
+         <li><a href="/">观察者网</a></li>
+         <li><a href="/">中国投资</a></li>
+         <li><a href="/">强国论坛</a></li>
+         <li><a href="/">车讯网</a></li>
+         <li><a href="http://www.genban.org">跟版模板网</a></li>
+         <li><a href="/">一带一路门户网</a></li>
+       </ul>
+    </div>
+</div>
+<div class="clear"></div>
+<script>
+window.onload=function(){
+   var oLi=document.getElementById("tb").getElementsByTagName("li");
+   var oUl=document.getElementById("tb-main").getElementsByTagName("div");
+   for(var i=0;i<oLi.length;i++){
+     oLi[i].index=i;
+     oLi[i].onmouseover=function(){
+        for(var n=0;n<oLi.length;n++)
+          oLi[n].className="";
+        this.className="cur";
+        for(var n=0;n<oUl.length;n++)
+          oUl[n].style.display="none";
+        oUl[this.index].style.display="block";              
+     }
+   }
+}
+</script>

@@ -1,0 +1,134 @@
+<style type="text/css">
+.dropdown-menu-left>li>a{
+  padding: 8px 20px;
+  border-bottom:1px solid #eee;
+}
+.dropdown-menu-left li b{
+  background-color: #777;
+  padding:3px 7px;
+  font-size: 12px;
+  border-radius: 10px;
+  color: #fff;
+  margin-left: 5px;
+  float: right;
+}
+.item{
+  background-color: #3399CC;
+  color: #fff;
+}
+</style>
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid"> 
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+                 <span class="sr-only">切换导航</span> 
+                 <span class="icon-bar"></span> 
+                 <span class="icon-bar"></span> 
+                 <span class="icon-bar"></span> 
+              </button>
+              <a class="navbar-brand" href="/">小鱼</a> 
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新消息<span class="badge" style="margin: 0 5px;">{$newCount}</span><span class="caret"></span></a>
+                      <ul class="dropdown-menu dropdown-menu-left">
+                        <li>
+                           <a href="/Admin/Say/sayContentList">说说<if condition="$newSayNum gt 0"><b>{$newSayNum}</b></if></a>
+                        </li>
+                        <li>
+                            <a href="/Admin/Article/artContentList">文章<if condition="$newArtNum gt 0"><b>{$newArtNum}</b></if></a>
+                        </li>
+                        <li>
+                            <a href="/Admin/Log/logContentList">日志<if condition="$newLogNum gt 0"><b>{$newLogNum}</b></if></a>
+                        </li>
+                        <li>
+                            <a href="/Admin/Board/boardContentList">留言板<if condition="$newBoardNum gt 0"><b>{$newBoardNum}</b></if></a>
+                        </li>
+                      </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{$userInfo.u_name}<span class="caret"></span></a>
+                      <ul class="dropdown-menu dropdown-menu-left">
+                        <li><a title="查看或修改个人信息" data-toggle="modal" data-target="#seeUserInfo">个人信息</a></li>
+                        <li><a title="查看您的登录记录" data-toggle="modal" data-target="#seeUserLoginlog">登录记录</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="login.html" onClick="if(!confirm('是否确认退出？'))return false;">退出登录</a></li>
+                  <li><a data-toggle="modal" data-target="#WeChat">帮助</a></li>
+                </ul>
+                <!-- <form action="" method="post" class="navbar-form navbar-right" role="search">
+                  <div class="input-group">
+                      <input type="text" class="form-control" autocomplete="off" placeholder="键入关键字搜索" maxlength="15">
+                      <span class="input-group-btn">
+                         <button class="btn btn-default" type="submit">搜索</button>
+                       </span> 
+                  </div>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="row">
+    <aside class="col-sm-3 col-md-2 col-lg-2 sidebar">
+        <ul class="nav nav-sidebar">
+            <li class="{$index}"><a href="/Admin/Index/index">首页</a></li>
+        </ul>
+        <ul class="nav nav-sidebar">
+            <li class="{$art}"><a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">发布内容</a>
+              <ul class="dropdown-menu" aria-labelledby="userMenu">
+                <li><a href="/Admin/Article/index" class="{$artitem}">发布文章</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/Admin/Say/index" class="{$sayitem}">发布说说</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/Admin/Log/index" class="{$logitem}">发布日志</a></li>
+              </ul>
+            </li>
+            <li class="{$artlist}"><a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">内容管理</a>
+              <ul class="dropdown-menu" aria-labelledby="userMenu">
+                <li><a href="/Admin/Article/artList" class="{$artL}">文章列表</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/Admin/Say/sayList" class="{$sayL}">说说列表</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/Admin/Log/logList" class="{$logL}">日志列表</a></li>
+              </ul>
+            </li>
+            <li class="{$cat}"><a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">栏目</a>
+              <ul class="dropdown-menu" aria-labelledby="userMenu"> 
+                <li><a href="/Admin/Cat/index" class="{$catitem}">新增栏目</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/Admin/Cat/catList" class="{$catlist}">栏目列表</a></li>
+              </ul>
+            </li>
+        </ul>
+        <ul class="nav nav-sidebar">
+            <li class="{$user}"><a href="/Admin/User/index">用户</a></li>
+            <li class="{$comment}"><a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">用户互动</a>
+              <ul class="dropdown-menu" aria-labelledby="settingMenu">
+                <li><a href="/Admin/Say/sayContentList" class="{$saycomment}">说说评论</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/Admin/Article/artContentList" class="{$artcomment}">文章评论</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/Admin/Log/logContentList" class="{$logcomment}">日志评论</a></li>   
+                <li role="separator" class="divider"></li>
+                <li><a href="/Admin/Board/boardContentList" class="{$boardcomment}">留言板评论</a></li>    
+              </ul>
+            </li>
+            <li class="{$system}"><a href="/Admin/System/index">系统设置</a></li>
+        </ul>
+        <ul class="nav nav-sidebar">
+            <li class="{$album}"><a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">相册管理</a>
+              <ul class="dropdown-menu" aria-labelledby="settingMenu">
+                 <li><a href="/Admin/Album/index">新增相册</a></li>
+                 <li role="separator" class="divider"></li>
+                 <li><a href="/Admin/Album/albumList">相册列表</a></li>  
+              </ul>
+            </li>
+            <li class="{$picture}"><a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">图片管理</a>
+              <ul class="dropdown-menu" aria-labelledby="settingMenu">
+                 <li><a href="/Admin/Picture/index">新增图片</a></li>
+                 <li role="separator" class="divider"></li>
+                 <li><a href="/Admin/Picture/pictureList">图片列表</a></li>  
+              </ul>
+            </li>
+        </ul>
+    </aside>

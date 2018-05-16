@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>小鱼博客</title>
+ <meta name="关键字" content="">
+ <meta name="Keywords" content="个人网站,小鱼博客,小鱼网站,小鱼,个人网站">
+ <meta name="description" content="小鱼博客是一个分享技术文章、个人生活的网站">
+ <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+ <link href="__CSS__/buju.css" rel="stylesheet">
+ <link href="__CSS__/index.css" rel="stylesheet">
+ <script type="text/javascript" src="__JS__/jquery.min.js"></script>
+ <script type="text/javascript" src="__JS__/sliders.js"></script>
+</head>
+<body>
+  <include file="Public:header" />
+  <article>
+    <div class="l_box f_l">
+	   <div class="topnews">
+  	    <h2> 
+    	     首页  >  <a href="{:U('/article')}">文章</a>  >  <a style="color:#0196E3">{$info.a_name}</a>
+  	    </h2>
+        <input type="hidden" value="{$info.a_id}" id="ac_pid">
+        <input type="hidden" value="" id="ac_name">
+        <input type="hidden" value="" id="ac_img">
+        <div class="artContent">
+            <div class="artTitle">{$info.a_name}</div>
+            <div class="author">
+               <div class="auto">
+                   <span class="au01">{$info.a_root}</span>
+                   <span class="au02">{$info.a_time|date="Y-m-d",###}</span>
+               </div>
+            </div>
+            <div class="info">{$info.a_content|htmlspecialchars_decode}</div>
+        </div>
+        <div class="copyright_author">
+            <p>
+              <strong>版权声明：</strong>
+              本站原创文章，于{$info.a_time|date="Y-m-d",###}，由
+              <a href="https://www.yezismile.com/detail/5.html" target="_blank">{$info.a_root}</a>
+              发表
+            </p>
+            <p class="p-hidden">
+              <strong>转载请注明：</strong>
+              <a href="https://www.yezismile.com/detail/459.html" target="_self">{$info.a_name}</a>
+               | 
+              <a href="https://www.yezismile.com/">小鱼博客</a>
+            </p>
+        </div>
+        <!-- JiaThis Button BEGIN -->
+        <div class="jiathis_style">
+            <span class="jiathis_txt">分享到：</span>
+            <a class="jiathis_button_qzone"></a>
+            <a class="jiathis_button_tsina"></a>
+            <a class="jiathis_button_weixin"></a>
+            <a class="jiathis_button_cqq"></a>
+            <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+            <div class="clear"></div>
+        </div>
+        <script type="text/javascript" >
+        var jiathis_config={
+          summary:"",
+          shortUrl:false,
+          hideMore:true
+        }
+        </script>
+        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+        <!-- JiaThis Button END -->
+        <notempty name="prev['a_id']">
+           <div class="nextpage">
+              <b>上一篇:</b>
+              <a href="{:U('/artinfo-'.$prev['a_id'])}">{$prev.a_name}</a>
+           </div>
+        </notempty>
+        <notempty name="next['a_id']">
+          <div class="nextpage">
+            <b>下一篇:</b>
+            <a href="{:U('/artinfo-'.$next['a_id'])}">{$next.a_name}</a>
+          </div>
+        </notempty>
+        <div class="comment">
+            <div class="com_form">
+              <textarea class="input" id="saytext" name="saytext"></textarea>
+              <p>
+                <input type="button" class="sub_btn" value="提交">
+                <span class="emotion"></span>
+              </p>
+            </div>
+        </div>
+        <if condition="($num gt 0)">
+          <div class="board">
+            <div class="titles">
+               <div class="lt">评论</div>
+               <div class="rt"><span>{$num}</span>人参与,<span>{$num}</span>条评论</div>
+            </div>
+            <volist name="list" id="vo">
+               <div class="bList">
+                   <div class="lItem">
+                       <img src="{$vo.ac_img}" class="logo">
+                       <div class="lCont">
+                          <p class="p1">
+                            <span class="s1"><b class="name">{$vo.ac_name}</b>[{$vo.ac_ip|getIp}]</span>
+                            <span class="s2">{$vo.ac_time|getTime}</span>
+                          </p>
+                          <p class="p2">{$vo.ac_content|reFace}</p>
+                       </div>
+                   </div>
+                   <notempty name="vo['ac_retime']">
+                   <div class="lItem rItem">
+                     <img src="{$vo.ac_reimg}" class="logo">
+                     <div class="lCont">
+                        <p class="p1">
+                          <span class="s1"><b class="name">{$vo.ac_rename}</b>回复<b class="name1">{$vo.ac_name}</b></span>
+                          <span class="s2">{$vo.ac_retime|getTime}</span>
+                        </p>
+                        <p class="p2">{$vo.ac_recontent|reFaceMy}</p>
+                     </div>
+                   </div>
+                   </notempty>
+                </div>
+            </volist>
+          </div>
+        </if>
+	   </div><!--topnews-->
+	  </div><!--l_box f_l-->
+    <include file="Public:right" />
+  </article>
+<include file="Public:footer" />
+</body>
+</html>
+<script type="text/javascript" src="__JS__/jquery.qqFace.js"></script>
+<script type="text/javascript">
+$(function(){
+  $('.emotion').qqFace({
+    id : 'facebox', 
+    assign:'saytext', 
+    path:'/Public/Home/arclist/'
+  });
+
+  $(".sub_btn").click(function(){
+     var ac_pid = $('#ac_pid').val();
+     var ac_name = $('#ac_name').val();
+     var ac_img = $('#ac_img').val();
+     var ac_content = $('#saytext').val();
+     if(ac_name == ''){
+        ac_name = '游客';
+     }
+     if(ac_img == ''){
+        ac_img = '/Public/Home/img/default.png';
+     }
+     if(ac_content == ''){
+        alert('评论内容不能为空');
+        return false;
+     }
+     $('.sub_btn').attr('disabled',true);
+     $.ajax({
+       url: '/Admin/Article/artContent',
+       type: 'post',
+       data: {'ac_pid':ac_pid, 'ac_name':ac_name, 'ac_img':ac_img, 'ac_content':ac_content},
+       success: function(data){
+          if(data.error == 0){
+             window.location.reload();
+          }else{
+             alert(data.msg);
+             $('.sub_btn').removeAttr('disabled');
+          }
+       }
+     })
+  });
+});
+function replace_em(str){
+  str = str.replace(/\</g,'&lt;');
+  str = str.replace(/\>/g,'&gt;');
+  str = str.replace(/\n/g,'<br/>');
+  str = str.replace(/\[em_([0-9]*)\]/g,'<img src="/Public/Home/arclist/$1.gif" border="0"/>');
+  return str;
+}
+</script>

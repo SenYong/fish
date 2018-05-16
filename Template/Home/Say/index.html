@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>小鱼博客</title>
+ <meta name="关键字" content="">
+ <meta name="Keywords" content="个人网站,小鱼博客,小鱼网站,小鱼,个人网站">
+ <meta name="description" content="小鱼博客是一个分享技术文章、个人生活的网站">
+ <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+ <link href="__CSS__/buju.css" rel="stylesheet">
+ <link href="__CSS__/index.css" rel="stylesheet">
+ <script type="text/javascript" src="__JS__/jquery.min.js"></script>
+ <script type="text/javascript" src="__JS__/sliders.js"></script>
+</head>
+<body>
+  <include file="Public:header" />
+  <article>
+    <div class="l_box f_l">
+	   <div class="topnews">
+  	    <h2>
+      	   <a href="{:U('/say')}">畅所欲言</a>
+  	    </h2>
+        <div id="list">
+          <volist name="list" id="vo">
+            <div class="mood">
+                <span class="tutime">{$vo.s_time|date="Y-m-d H:i:s",###}</span>
+                <p class="p1"><a href="{:U('/sayinfo-'.$vo['s_id'])}" class="cont">{$vo.s_content}</a></p>
+                <p class="p2"><a class="span1" href="">浏览({$vo.s_hit})</a><a class="span2" href="">评论({$vo.s_num})</a></p>
+            </div>
+          </volist>
+        </div>
+        <div class="more">查看更多</div>
+	   </div><!--topnews-->
+	  </div><!--l_box f_l-->
+    <include file="Public:right" />
+  </article>
+<include file="Public:footer" />
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function(){
+       var page = 0;
+       $('.more').click(function(){
+         $.ajax({
+            url: '/Home/Say/getData',
+            type: 'post',
+            data: {'page':page},
+            success: function(data){
+              if(data.length){
+                $.each(data,function(index,item){
+                   var l_id = item.l_id
+                   var str = "<div class=\"mood\"><span class=\"tutime\">"+date(item.s_time)+"</span><p class=\"p1\"><a href=\"{:U('/sayinfo-'.'s_id')}\" class=\"cont\">"+item.s_content+"</a></p><p class=\"p2\"><a class=\"span1\">浏览("+item.s_hit+")</a><a class=\"span2\">评论("+item.s_num+")</a></p></div>"
+                   str=str.replace(/\l_id/g,l_id);  
+                   $('#list').append(str);
+                })
+                page+=1;
+              }else{
+                $('.more').hide();
+              }
+            }
+         })
+       })
+    })
+    function date(time){
+        var d = new Date(time * 1000);
+        var date = (d.getFullYear()) + "-" +  
+           (d.getMonth() + 1) + "-" + 
+           (d.getDate());
+         return date;
+    }
+</script>

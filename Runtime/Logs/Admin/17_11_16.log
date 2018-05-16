@@ -1,0 +1,2560 @@
+[ 2017-11-16T11:17:56+08:00 ] 127.0.0.1 /Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2017-11-16T11:18:02+08:00 ] 127.0.0.1 /Admin/Login/in
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `fh_user` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `fh_user` WHERE `u_name` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `fh_user` SET `u_logintime`='1510802282' WHERE `u_id` = 1 [ RunTime:0.0033s ]
+SQL: UPDATE `fh_user` SET `u_num`=u_num+1 WHERE `u_id` = 1 [ RunTime:0.0013s ]
+
+[ 2017-11-16T11:18:05+08:00 ] 127.0.0.1 /Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `fh_user` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `fh_board` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_user` WHERE ( u_class < 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_user` WHERE `u_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_say` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_log` WHERE `l_show` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_board` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 33 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 60 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 272 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 325 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 330 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 337 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 341 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 375 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 376 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-11-16T11:18:05+08:00 ] 127.0.0.1 /Admin/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+
+[ 2017-11-16T11:18:05+08:00 ] 127.0.0.1 /Admin/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+
+[ 2017-11-16T11:18:10+08:00 ] 127.0.0.1 /Admin/System/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000402s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000564s ]
+NOTIC: [8] Undefined index: u_name E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 60 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 88 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 109 行.
+NOTIC: [8] Undefined index: u_id E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 289 行.
+NOTIC: [8] Undefined index: u_root E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 342 行.
+NOTIC: [8] Undefined index: u_class E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 347 行.
+NOTIC: [8] Undefined index: u_name E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 354 行.
+NOTIC: [8] Undefined index: u_email E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 358 行.
+NOTIC: [8] Undefined index: u_ip E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 392 行.
+NOTIC: [8] Undefined index: u_logintime E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 393 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2017-11-16T11:18:11+08:00 ] 127.0.0.1 /Admin/System/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+
+[ 2017-11-16T11:18:11+08:00 ] 127.0.0.1 /Admin/System/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+
+[ 2017-11-16T11:18:13+08:00 ] 127.0.0.1 /Admin/System/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined index: u_name E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 60 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 88 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 109 行.
+NOTIC: [8] Undefined index: u_id E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 289 行.
+NOTIC: [8] Undefined index: u_root E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 342 行.
+NOTIC: [8] Undefined index: u_class E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 347 行.
+NOTIC: [8] Undefined index: u_name E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 354 行.
+NOTIC: [8] Undefined index: u_email E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 358 行.
+NOTIC: [8] Undefined index: u_ip E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 392 行.
+NOTIC: [8] Undefined index: u_logintime E:\fish\Runtime\Cache\Admin\b7114ebc93e902ca9200a883e1d31892.php 第 393 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2017-11-16T11:18:13+08:00 ] 127.0.0.1 /Admin/System/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+
+[ 2017-11-16T11:18:13+08:00 ] 127.0.0.1 /Admin/System/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+
+[ 2017-11-16T11:45:51+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2017-11-16T11:45:51+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-11-16T11:45:51+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+
+[ 2017-11-16T11:49:44+08:00 ] 127.0.0.1 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1406:Data too long for column 'a_desc' at row 1
+ [ SQL语句 ] : INSERT INTO `fh_article` (`a_name`,`a_content`,`a_desc`,`pid`,`a_keyword`,`a_img`,`a_show`,`a_original`,`a_root`,`a_time`,`a_system`,`a_ip`) VALUES ('住在手机里的朋友','&lt;p&gt;&lt;span style=&quot;color: rgb(117, 111, 113); font-family: &amp;quot;Microsoft Yahei&amp;quot;, Simsun; font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&amp;quot;&lt;/span&gt;&lt;/p&gt;','&quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&quot;','3','个人博客','/Uploads/image/20171116/1510804173109838.jpg','0','1','','1510804184','Win 7','127.0.0.1')
+ERR: 1406:Data too long for column 'a_desc' at row 1
+ [ SQL语句 ] : INSERT INTO `fh_article` (`a_name`,`a_content`,`a_desc`,`pid`,`a_keyword`,`a_img`,`a_show`,`a_original`,`a_root`,`a_time`,`a_system`,`a_ip`) VALUES ('住在手机里的朋友','&lt;p&gt;&lt;span style=&quot;color: rgb(117, 111, 113); font-family: &amp;quot;Microsoft Yahei&amp;quot;, Simsun; font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&amp;quot;&lt;/span&gt;&lt;/p&gt;','&quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&quot;','3','个人博客','/Uploads/image/20171116/1510804173109838.jpg','0','1','','1510804184','Win 7','127.0.0.1')
+
+[ 2017-11-16T11:51:18+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2017-11-16T11:51:18+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+
+[ 2017-11-16T11:51:18+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+
+[ 2017-11-16T11:52:30+08:00 ] 127.0.0.1 /Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2017-11-16T11:52:36+08:00 ] 127.0.0.1 /Admin/Login/in
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `fh_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `fh_user` WHERE `u_name` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `fh_user` SET `u_logintime`='1510804356' WHERE `u_id` = 1 [ RunTime:0.0102s ]
+SQL: UPDATE `fh_user` SET `u_num`=u_num+1 WHERE `u_id` = 1 [ RunTime:0.0014s ]
+
+[ 2017-11-16T11:52:40+08:00 ] 127.0.0.1 /Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `fh_user` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `fh_board` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_user` WHERE ( u_class < 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_user` WHERE `u_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_say` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_log` WHERE `l_show` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_board` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 33 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 60 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 272 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 325 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 330 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 337 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 341 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 375 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\6be543cd41def918d87e15996786a60d.php 第 376 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2017-11-16T11:52:40+08:00 ] 127.0.0.1 /Admin/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+
+[ 2017-11-16T11:52:40+08:00 ] 127.0.0.1 /Admin/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+
+[ 2017-11-16T11:52:46+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2017-11-16T11:52:46+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+
+[ 2017-11-16T11:52:47+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+
+[ 2017-11-16T11:53:56+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2017-11-16T11:53:56+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+
+[ 2017-11-16T11:53:56+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+
+[ 2017-11-16T11:55:18+08:00 ] 127.0.0.1 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: validate E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1406:Data too long for column 'a_desc' at row 1
+ [ SQL语句 ] : INSERT INTO `fh_article` (`a_name`,`a_content`,`a_desc`,`pid`,`a_keyword`,`a_img`,`a_show`,`a_original`,`a_root`,`a_time`,`a_system`,`a_ip`) VALUES ('住在手机里的朋友','&lt;p&gt;&lt;span style=&quot;color: rgb(117, 111, 113); font-family: &amp;quot;Microsoft Yahei&amp;quot;, Simsun; font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&amp;quot;&lt;/span&gt;&lt;/p&gt;','&quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&quot;','3','个人博客','/Uploads/image/20171116/1510804514120932.jpg','0','1','admin','1510804518','Win 7','127.0.0.1')
+ERR: 1406:Data too long for column 'a_desc' at row 1
+ [ SQL语句 ] : INSERT INTO `fh_article` (`a_name`,`a_content`,`a_desc`,`pid`,`a_keyword`,`a_img`,`a_show`,`a_original`,`a_root`,`a_time`,`a_system`,`a_ip`) VALUES ('住在手机里的朋友','&lt;p&gt;&lt;span style=&quot;color: rgb(117, 111, 113); font-family: &amp;quot;Microsoft Yahei&amp;quot;, Simsun; font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&amp;quot;&lt;/span&gt;&lt;/p&gt;','&quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&quot;','3','个人博客','/Uploads/image/20171116/1510804514120932.jpg','0','1','admin','1510804518','Win 7','127.0.0.1')
+
+[ 2017-11-16T11:57:25+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2017-11-16T11:57:25+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+
+[ 2017-11-16T11:57:25+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+
+[ 2017-11-16T11:57:43+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2017-11-16T11:57:43+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+
+[ 2017-11-16T11:57:43+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+
+[ 2017-11-16T11:58:30+08:00 ] 127.0.0.1 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1406:Data too long for column 'a_desc' at row 1
+ [ SQL语句 ] : INSERT INTO `fh_article` (`a_name`,`a_content`,`a_desc`,`pid`,`a_keyword`,`a_img`,`a_show`,`a_original`,`a_root`,`a_time`,`a_system`,`a_ip`) VALUES ('住在手机里的朋友','&lt;p&gt;&lt;span style=&quot;color: rgb(117, 111, 113); font-family: &amp;quot;Microsoft Yahei&amp;quot;, Simsun; font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&amp;quot;&lt;/span&gt;&lt;/p&gt;','&quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&quot;','3','个人博客','/Uploads/image/20171116/1510804703100453.jpg','0','1','admin','1510804710','Win 7','127.0.0.1')
+ERR: 1406:Data too long for column 'a_desc' at row 1
+ [ SQL语句 ] : INSERT INTO `fh_article` (`a_name`,`a_content`,`a_desc`,`pid`,`a_keyword`,`a_img`,`a_show`,`a_original`,`a_root`,`a_time`,`a_system`,`a_ip`) VALUES ('住在手机里的朋友','&lt;p&gt;&lt;span style=&quot;color: rgb(117, 111, 113); font-family: &amp;quot;Microsoft Yahei&amp;quot;, Simsun; font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&amp;quot;&lt;/span&gt;&lt;/p&gt;','&quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&quot;','3','个人博客','/Uploads/image/20171116/1510804703100453.jpg','0','1','admin','1510804710','Win 7','127.0.0.1')
+
+[ 2017-11-16T11:59:08+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2017-11-16T11:59:08+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+
+[ 2017-11-16T11:59:08+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+
+[ 2017-11-16T11:59:37+08:00 ] 127.0.0.1 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+
+[ 2017-11-16T11:59:39+08:00 ] 127.0.0.1 /Admin/Article/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_id desc LIMIT 0,5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 60 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 109 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2017-11-16T12:00:11+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2017-11-16T12:00:11+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+
+[ 2017-11-16T12:00:11+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+
+[ 2017-11-16T12:00:13+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2017-11-16T12:00:13+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+
+[ 2017-11-16T12:00:13+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+
+[ 2017-11-16T12:00:48+08:00 ] 127.0.0.1 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0044s ]
+NOTIC: [8] Undefined index: validate E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-11-16T12:03:49+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2017-11-16T12:03:49+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+
+[ 2017-11-16T12:03:49+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+
+[ 2017-11-16T12:03:55+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2017-11-16T12:03:55+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+
+[ 2017-11-16T12:03:55+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+
+[ 2017-11-16T12:03:56+08:00 ] 127.0.0.1 /Admin/Say/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 137 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 152 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 153 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 249 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 302 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 307 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 314 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 318 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 352 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\f515dd80f348f0cccd27e8eee9e0db85.php 第 353 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2017-11-16T12:03:56+08:00 ] 127.0.0.1 /Admin/Say/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+
+[ 2017-11-16T12:03:56+08:00 ] 127.0.0.1 /Admin/Say/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+
+[ 2017-11-16T12:04:21+08:00 ] 127.0.0.1 /Admin/Say/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: validate E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fh_say` (`s_content`,`s_img`,`s_show`,`s_root`,`s_time`,`s_system`,`s_ip`) VALUES ('&lt;p&gt;今天天气很好&lt;/p&gt;','/Uploads/image/20171116/1510805058509797.jpg','0','admin','1510805061','Win 7','127.0.0.1') [ RunTime:0.0117s ]
+
+[ 2017-11-16T12:04:23+08:00 ] 127.0.0.1 /Admin/Say/sayList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_say` WHERE `s_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_say` ORDER BY s_id desc LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\e10f5648e8bb527cbb3ed10f943d2fe2.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\e10f5648e8bb527cbb3ed10f943d2fe2.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\e10f5648e8bb527cbb3ed10f943d2fe2.php 第 60 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\e10f5648e8bb527cbb3ed10f943d2fe2.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\e10f5648e8bb527cbb3ed10f943d2fe2.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\e10f5648e8bb527cbb3ed10f943d2fe2.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\e10f5648e8bb527cbb3ed10f943d2fe2.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\e10f5648e8bb527cbb3ed10f943d2fe2.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\e10f5648e8bb527cbb3ed10f943d2fe2.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2017-11-16T12:04:30+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2017-11-16T12:04:30+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+
+[ 2017-11-16T12:04:30+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+
+[ 2017-11-16T12:05:38+08:00 ] 127.0.0.1 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0042s ]
+NOTIC: [8] Undefined index: validate E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1406:Data too long for column 'a_desc' at row 1
+ [ SQL语句 ] : INSERT INTO `fh_article` (`a_name`,`a_content`,`a_desc`,`pid`,`a_keyword`,`a_img`,`a_show`,`a_original`,`a_root`,`a_time`,`a_system`,`a_ip`) VALUES ('住在手机里的朋友','&lt;p&gt;&lt;span style=&quot;color: rgb(117, 111, 113); font-family: &amp;quot;Microsoft Yahei&amp;quot;, Simsun; font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&amp;quot;&lt;/span&gt;&lt;/p&gt;','&quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&quot;','3','个人,博客,个人博客','/Uploads/image/20171116/1510805133893511.jpg','0','1','admin','1510805138','Win 7','127.0.0.1')
+ERR: 1406:Data too long for column 'a_desc' at row 1
+ [ SQL语句 ] : INSERT INTO `fh_article` (`a_name`,`a_content`,`a_desc`,`pid`,`a_keyword`,`a_img`,`a_show`,`a_original`,`a_root`,`a_time`,`a_system`,`a_ip`) VALUES ('住在手机里的朋友','&lt;p&gt;&lt;span style=&quot;color: rgb(117, 111, 113); font-family: &amp;quot;Microsoft Yahei&amp;quot;, Simsun; font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&amp;quot;&lt;/span&gt;&lt;/p&gt;','&quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&quot;','3','个人,博客,个人博客','/Uploads/image/20171116/1510805133893511.jpg','0','1','admin','1510805138','Win 7','127.0.0.1')
+
+[ 2017-11-16T12:05:47+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2017-11-16T12:05:47+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+
+[ 2017-11-16T12:05:47+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+
+[ 2017-11-16T12:06:03+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+
+[ 2017-11-16T12:06:03+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+
+[ 2017-11-16T12:06:07+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-11-16T12:06:07+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+
+[ 2017-11-16T12:06:15+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-11-16T12:06:15+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+
+[ 2017-11-16T12:06:53+08:00 ] 127.0.0.1 /Admin/Article/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_id desc LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 60 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 109 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2017-11-16T12:06:59+08:00 ] 127.0.0.1 /index.php/Admin/Article/edit/id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 9 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined index: u_name E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined index: u_id E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined index: u_root E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined index: u_class E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined index: u_name E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined index: u_email E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined index: u_ip E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined index: u_logintime E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-11-16T12:06:59+08:00 ] 127.0.0.1 /index.php/Admin/Article/edit/id/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+
+[ 2017-11-16T12:06:59+08:00 ] 127.0.0.1 /index.php/Admin/Article/edit/id/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+
+[ 2017-11-16T12:07:01+08:00 ] 127.0.0.1 /Admin/Article/modify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: validate E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `fh_article` SET `a_name`='其实我是个假程序员',`a_content`='&lt;p style=&quot;text-indent:2em;&quot;&gt;&lt;span style=&quot;color: rgb(216, 216, 216); font-size: 14px;&quot;&gt;&lt;/span&gt;自从入了代码的坑，就想写点文字祭奠一下落寞的青春。代码密密麻麻，文字却无处安放，只能把该说的话写在注释里，那远去的梦，伸手摸不到影，该悲还是该叹，该哭还是该笑，不写段子空追忆，独留代码怅所失。&lt;/p&gt;&lt;p style=&quot;text-align:center;text-indent:2em;&quot;&gt;&lt;img src=&quot;https://static.yezismile.com/kindeditor/attached/image/20171009/20171009051912_45344.gif&quot; alt=&quot;&quot;/&gt; &lt;/p&gt;&lt;p style=&quot;text-indent:2em;&quot;&gt;
+	我编程三五日，听着键盘声，奏出和谐乐，QQ在闪烁，微信在跳动，那几行代码整齐的排行着，像梦里的海鸥，等待着飞向另一个岛。在命令行执行一下文件，一行一行的数据日志呈现出来，如变了个戏法告诉你，那跳动的音符是可以发出声音的。&lt;/p&gt;&lt;p style=&quot;text-align:center;text-indent:2em;&quot;&gt;&lt;img src=&quot;https://static.yezismile.com/kindeditor/attached/image/20171009/20171009051922_15841.jpg&quot; alt=&quot;&quot;/&gt; &lt;/p&gt;&lt;p style=&quot;text-indent:2em;&quot;&gt;
+	心儿扑通扑通得跳，害怕八阿哥的到来，终端机闪耀着光芒，不懂的人说是黑色屏幕跳动着彩色的字母，可是对我程来说，黑色代表着无敌的智慧，你眼里看到的成千上万的数据，你肉眼可见的那五彩斑斓的内容，都是黑色的屏幕慢慢完成的，它从不邀功，也不炫耀，唯一害怕的每一只bug莫名其妙的飘来。&lt;/p&gt;&lt;p style=&quot;text-align:center;text-indent:2em;&quot;&gt;&lt;img src=&quot;https://static.yezismile.com/kindeditor/attached/image/20171009/20171009051932_85516.jpg&quot; alt=&quot;&quot;/&gt; &lt;/p&gt;&lt;p style=&quot;text-indent:2em;&quot;&gt;
+	没有人能听懂我们的语言，字符串，数组，对象，都是神马东东。没有人在意你写了几行代码，想了多少遍逻辑方案，程序就在那里静静躺着，不言语不浮躁。如果不更新迭代的时候，几百年后，它如一只眼睛代替我到这个世界去看一看，就看一看，不留一点痕迹。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`a_desc`='哈哈,其实我是假的',`pid`='3',`a_keyword`='闲言,碎语,闲言碎语',`a_img`='/Uploads/image/20171031/1509422575320027.jpg',`a_show`='0',`a_original`='1',`a_root`='admin',`a_time`='1510805221',`a_system`='Win 7',`a_ip`='127.0.0.1' WHERE `a_id` = 9 [ RunTime:0.0116s ]
+
+[ 2017-11-16T12:07:04+08:00 ] 127.0.0.1 /Admin/Article/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_id desc LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 60 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 109 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2017-11-16T12:07:12+08:00 ] 127.0.0.1 /index.php/Admin/Article/edit/id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 9 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined index: u_name E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined index: u_id E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined index: u_root E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined index: u_class E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined index: u_name E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined index: u_email E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined index: u_ip E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined index: u_logintime E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2017-11-16T12:07:12+08:00 ] 127.0.0.1 /index.php/Admin/Article/edit/id/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-11-16T12:07:12+08:00 ] 127.0.0.1 /index.php/Admin/Article/edit/id/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-11-16T12:07:21+08:00 ] 127.0.0.1 /index.php/Admin/Article/edit/id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] Undefined index: u_name E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined index: u_id E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined index: u_root E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined index: u_class E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined index: u_name E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined index: u_email E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined index: u_ip E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined index: u_logintime E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011918s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2017-11-16T12:07:21+08:00 ] 127.0.0.1 /index.php/Admin/Article/edit/id/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+
+[ 2017-11-16T12:07:21+08:00 ] 127.0.0.1 /index.php/Admin/Article/edit/id/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+
+[ 2017-11-16T12:07:28+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2017-11-16T12:07:28+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+
+[ 2017-11-16T12:07:28+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+
+[ 2017-11-16T12:08:33+08:00 ] 127.0.0.1 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: validate E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fh_article` (`a_name`,`a_content`,`a_desc`,`pid`,`a_keyword`,`a_img`,`a_show`,`a_original`,`a_root`,`a_time`,`a_system`,`a_ip`) VALUES ('其实我是个假程序员','&lt;p style=&quot;white-space: normal; text-indent: 2em;&quot;&gt;自从入了代码的坑，就想写点文字祭奠一下落寞的青春。代码密密麻麻，文字却无处安放，只能把该说的话写在注释里，那远去的梦，伸手摸不到影，该悲还是该叹，该哭还是该笑，不写段子空追忆，独留代码怅所失。&lt;/p&gt;&lt;p style=&quot;white-space: normal; text-align: center; text-indent: 2em;&quot;&gt;&lt;img src=&quot;https://static.yezismile.com/kindeditor/attached/image/20171009/20171009051912_45344.gif&quot; alt=&quot;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;white-space: normal; text-indent: 2em;&quot;&gt;我编程三五日，听着键盘声，奏出和谐乐，QQ在闪烁，微信在跳动，那几行代码整齐的排行着，像梦里的海鸥，等待着飞向另一个岛。在命令行执行一下文件，一行一行的数据日志呈现出来，如变了个戏法告诉你，那跳动的音符是可以发出声音的。&lt;/p&gt;&lt;p style=&quot;white-space: normal; text-align: center; text-indent: 2em;&quot;&gt;&lt;img src=&quot;https://static.yezismile.com/kindeditor/attached/image/20171009/20171009051922_15841.jpg&quot; alt=&quot;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;white-space: normal; text-indent: 2em;&quot;&gt;心儿扑通扑通得跳，害怕八阿哥的到来，终端机闪耀着光芒，不懂的人说是黑色屏幕跳动着彩色的字母，可是对我程来说，黑色代表着无敌的智慧，你眼里看到的成千上万的数据，你肉眼可见的那五彩斑斓的内容，都是黑色的屏幕慢慢完成的，它从不邀功，也不炫耀，唯一害怕的每一只bug莫名其妙的飘来。&lt;/p&gt;&lt;p style=&quot;white-space: normal; text-align: center; text-indent: 2em;&quot;&gt;&lt;img src=&quot;https://static.yezismile.com/kindeditor/attached/image/20171009/20171009051932_85516.jpg&quot; alt=&quot;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;white-space: normal; text-indent: 2em;&quot;&gt;没有人能听懂我们的语言，字符串，数组，对象，都是神马东东。没有人在意你写了几行代码，想了多少遍逻辑方案，程序就在那里静静躺着，不言语不浮躁。如果不更新迭代的时候，几百年后，它如一只眼睛代替我到这个世界去看一看，就看一看，不留一点痕迹。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','哈哈,其实我是假的','3','闲言,碎语,闲言碎语','/Uploads/image/20171116/1510805307561564.jpg','0','1','admin','1510805313','Win 7','127.0.0.1') [ RunTime:0.0103s ]
+
+[ 2017-11-16T12:08:35+08:00 ] 127.0.0.1 /Admin/Article/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_id desc LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 60 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 109 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2017-11-16T12:09:31+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2017-11-16T12:09:31+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+
+[ 2017-11-16T12:09:31+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+
+[ 2017-11-16T12:11:26+08:00 ] 127.0.0.1 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: validate E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fh_article` (`a_name`,`a_content`,`a_desc`,`pid`,`a_keyword`,`a_img`,`a_show`,`a_original`,`a_root`,`a_time`,`a_system`,`a_ip`) VALUES ('住在手机里的朋友','&lt;p&gt;&amp;quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&amp;quot;&lt;/p&gt;','&quot;通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊 ...&quot;','3','个人博客','/Uploads/image/20171116/1510805469915587.jpg','0','1','admin','1510805486','Win 7','127.0.0.1') [ RunTime:0.0115s ]
+
+[ 2017-11-16T12:11:29+08:00 ] 127.0.0.1 /Admin/Article/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_id desc LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 60 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 109 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2017-11-16T12:11:51+08:00 ] 127.0.0.1 /Admin/Article/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0028s ]
+SQL: DELETE FROM `fh_article` WHERE `a_id` = 10 [ RunTime:0.0113s ]
+
+[ 2017-11-16T12:11:52+08:00 ] 127.0.0.1 /Admin/Article/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_id desc LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 60 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 109 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2017-11-16T12:11:56+08:00 ] 127.0.0.1 /Admin/Article/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0028s ]
+SQL: DELETE FROM `fh_article` WHERE `a_id` = 9 [ RunTime:0.0110s ]
+
+[ 2017-11-16T12:11:57+08:00 ] 127.0.0.1 /Admin/Article/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_id desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 60 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 109 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2017-11-16T12:12:04+08:00 ] 127.0.0.1 /Admin/Article/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0028s ]
+SQL: DELETE FROM `fh_article` WHERE `a_id` = 6 [ RunTime:0.0100s ]
+
+[ 2017-11-16T12:12:05+08:00 ] 127.0.0.1 /Admin/Article/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_id desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 60 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 109 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2017-11-16T12:12:17+08:00 ] 127.0.0.1 /Admin/Cat/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 60 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 69 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 134 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 151 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 156 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 168 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 169 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 263 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 316 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 321 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 328 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 332 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 366 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\97e661018fea0c0f74104ca50aa7049e.php 第 367 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-11-16T12:12:17+08:00 ] 127.0.0.1 /Admin/Cat/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-11-16T12:12:17+08:00 ] 127.0.0.1 /Admin/Cat/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+
+[ 2017-11-16T12:12:40+08:00 ] 127.0.0.1 /Admin/Article/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_id desc LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 60 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 109 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2017-11-16T12:12:42+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000462s ]
+
+[ 2017-11-16T12:12:42+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+
+[ 2017-11-16T12:12:42+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+
+[ 2017-11-16T12:13:22+08:00 ] 127.0.0.1 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: validate E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fh_article` (`a_name`,`a_content`,`a_desc`,`pid`,`a_keyword`,`a_img`,`a_show`,`a_original`,`a_root`,`a_time`,`a_system`,`a_ip`) VALUES ('教你怎样用欠费手机拨打电话','&lt;p&gt;&lt;span style=&quot;color: rgb(117, 111, 113); font-family: &amp;quot;Microsoft Yahei&amp;quot;, Simsun; font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;quot;初次相识的喜悦，让你觉得似乎找到了知音。于是，对于投缘的人，开始了较频繁的交往。渐渐地，初识的喜悦退尽，接下来就是仅仅保持着联系，平淡到偶尔在节假曰发短信互致问候...&amp;quot;&lt;/span&gt;&lt;/p&gt;','&quot;初次相识的喜悦，让你觉得似乎找到了知音。于是，对于投缘的人，开始了较频繁的交往。渐渐地，初识的喜悦退尽，接下来就是仅仅保持着联系，平淡到偶尔在节假曰发短信互致问候...&quot;','3','个人博客','/Uploads/image/20171116/1510805596109094.jpg','0','1','admin','1510805602','Win 7','127.0.0.1') [ RunTime:0.0101s ]
+
+[ 2017-11-16T12:13:24+08:00 ] 127.0.0.1 /Admin/Article/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_id desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 60 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 109 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2017-11-16T12:13:40+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2017-11-16T12:13:41+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+
+[ 2017-11-16T12:13:41+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+
+[ 2017-11-16T12:14:58+08:00 ] 127.0.0.1 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: validate E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fh_article` (`a_name`,`a_content`,`a_desc`,`pid`,`a_keyword`,`a_img`,`a_show`,`a_original`,`a_root`,`a_time`,`a_system`,`a_ip`) VALUES ('原来以为，一个人的勇敢是，删掉他的手机号码...','&lt;p&gt;&lt;span style=&quot;color: rgb(117, 111, 113); font-family: &amp;quot;Microsoft Yahei&amp;quot;, Simsun; font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;quot;原来以为，一个人的勇敢是，删掉他的手机号码、QQ号码等等一切，努力和他保持距离。等着有一天，习惯不想念他，习惯他不在身边,习惯时间把他在我记忆里的身影磨蚀干净...&amp;quot;&lt;/span&gt;&lt;/p&gt;','&quot;原来以为，一个人的勇敢是，删掉他的手机号码、QQ号码等等一切，努力和他保持距离。等着有一天，习惯不想念他，习惯他不在身边,习惯时间把他在我记忆里的身影磨蚀干净...&quot;','4','个人博客','/Uploads/image/20171116/1510805684345760.jpg','0','1','admin','1510805697','Win 7','127.0.0.1') [ RunTime:0.0030s ]
+
+[ 2017-11-16T12:15:00+08:00 ] 127.0.0.1 /Admin/Article/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_id desc LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 60 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 109 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2017-11-16T12:15:24+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2017-11-16T12:15:24+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+
+[ 2017-11-16T12:15:24+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+
+[ 2017-11-16T12:16:04+08:00 ] 127.0.0.1 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: validate E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fh_article` (`a_name`,`a_content`,`a_desc`,`pid`,`a_keyword`,`a_img`,`a_show`,`a_original`,`a_root`,`a_time`,`a_system`,`a_ip`) VALUES ('手机的16个惊人小秘密，据说99.999%的人都不知','&lt;p&gt;&lt;span style=&quot;color: rgb(117, 111, 113); font-family: &amp;quot;Microsoft Yahei&amp;quot;, Simsun; font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;quot;引导语：知道么，手机有备用电池，手机拨号码12593+电话号码=陷阱……手机具有很多你不知道的小秘密，说出来一定很惊奇！不信的话就来看看吧！...&amp;quot;&lt;/span&gt;&lt;/p&gt;','&quot;引导语：知道么，手机有备用电池，手机拨号码12593+电话号码=陷阱……手机具有很多你不知道的小秘密，说出来一定很惊奇！不信的话就来看看吧！...&quot;','1','个人博客','/Uploads/image/20171116/1510805759525848.jpg','0','1','admin','1510805764','Win 7','127.0.0.1') [ RunTime:0.0111s ]
+
+[ 2017-11-16T12:16:09+08:00 ] 127.0.0.1 /Admin/Article/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_id desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 60 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 109 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2017-11-16T12:16:12+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2017-11-16T12:16:12+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+
+[ 2017-11-16T12:16:12+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+
+[ 2017-11-16T12:16:58+08:00 ] 127.0.0.1 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: validate E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fh_article` (`a_name`,`a_content`,`a_desc`,`pid`,`a_keyword`,`a_img`,`a_show`,`a_original`,`a_root`,`a_time`,`a_system`,`a_ip`) VALUES ('你面对的是生活而不是手机','&lt;p&gt;&lt;span style=&quot;color: rgb(117, 111, 113); font-family: &amp;quot;Microsoft Yahei&amp;quot;, Simsun; font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;quot;每一次与别人吃饭，总会有人会拿出手机。以为他们在打电话或者有紧急的短信，但用余光瞟了一眼之后发现无非就两件事：1、看小说，2、上人人或者QQ...&amp;quot;&lt;/span&gt;&lt;/p&gt;','&quot;每一次与别人吃饭，总会有人会拿出手机。以为他们在打电话或者有紧急的短信，但用余光瞟了一眼之后发现无非就两件事：1、看小说，2、上人人或者QQ...&quot;','1','个人博客','/Uploads/image/20171116/1510805813451403.jpg','0','1','admin','1510805818','Win 7','127.0.0.1') [ RunTime:0.0099s ]
+
+[ 2017-11-16T12:17:00+08:00 ] 127.0.0.1 /Admin/Article/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_id desc LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 60 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 109 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2017-11-16T12:17:24+08:00 ] 127.0.0.1 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 129 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 133 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 138 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 166 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 173 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 189 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 193 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 194 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2017-11-16T12:17:24+08:00 ] 127.0.0.1 /Admin/Article/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-11-16T12:17:24+08:00 ] 127.0.0.1 /Admin/Article/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-11-16T12:18:17+08:00 ] 127.0.0.1 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0041s ]
+NOTIC: [8] Undefined index: validate E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fh_article` (`a_name`,`a_content`,`a_desc`,`pid`,`a_keyword`,`a_img`,`a_show`,`a_original`,`a_root`,`a_time`,`a_system`,`a_ip`) VALUES ('豪雅手机正式发布! 在法国全手工打造的奢侈品','&lt;ul style=&quot;list-style-type: none;&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;ul style=&quot;list-style-type: circle;&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px;&quot;&gt;&amp;quot;现在跨界联姻，时尚、汽车以及运动品牌联合手机制造商联合发布手机产品在行业里已经不再新鲜，上周我们给大家报道过著名手表制造商瑞士泰格·豪雅（Tag Heuer） 联合法国的手机制造商Modelabs发布的一款奢华手机的部分谍照，而近日该手机终于被正式发布了...&amp;quot;&lt;/p&gt;&lt;p class=&quot;autor&quot; style=&quot;margin-top: 10px; margin-bottom: 10px; padding: 0px; overflow: hidden; clear: both; display: inline-block; color: rgb(131, 131, 131); width: 482.391px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/ul&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px;&quot;&gt;&amp;nbsp; &lt;br/&gt;&lt;/p&gt;&lt;p class=&quot;autor&quot; style=&quot;margin-top: 10px; margin-bottom: 10px; padding: 0px; overflow: hidden; clear: both; display: inline-block; color: rgb(131, 131, 131); width: 482.391px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/ul&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','&quot;现在跨界联姻，时尚、汽车以及运动品牌联合手机制造商联合发布手机产品在行业里已经不再新鲜，上周我们给大家报道过著名手表制造商瑞士泰格·豪雅（Tag Heuer） 联合法国的手机制造商Modelabs发布的一款奢华手机的部分谍照，而近日该手机终于被正式发布了...&quot;
+','1','个人博客','/Uploads/image/20171116/1510805892437375.jpg','0','1','admin','1510805897','Win 7','127.0.0.1') [ RunTime:0.0112s ]
+
+[ 2017-11-16T12:18:22+08:00 ] 127.0.0.1 /Admin/Article/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_id desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 60 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 109 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2017-11-16T14:16:09+08:00 ] 127.0.0.1 /index.php/Admin/Article/edit/id/16.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined index: u_name E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 57 行.
+NOTIC: [8] Undefined variable: artlist E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 69 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 109 行.
+NOTIC: [8] Undefined index: u_id E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 290 行.
+NOTIC: [8] Undefined index: u_root E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 343 行.
+NOTIC: [8] Undefined index: u_class E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 348 行.
+NOTIC: [8] Undefined index: u_name E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 355 行.
+NOTIC: [8] Undefined index: u_email E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 359 行.
+NOTIC: [8] Undefined index: u_ip E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 393 行.
+NOTIC: [8] Undefined index: u_logintime E:\fish\Runtime\Cache\Admin\ed243359e2cf343f39ae323dcb70f771.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2017-11-16T14:16:10+08:00 ] 127.0.0.1 /index.php/Admin/Article/edit/id/images/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+
+[ 2017-11-16T14:16:10+08:00 ] 127.0.0.1 /index.php/Admin/Article/edit/id/images/baoman/baoman_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+
+[ 2017-11-16T14:16:31+08:00 ] 127.0.0.1 /Admin/Article/modify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: validate E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\fish\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `fh_article` SET `a_name`='豪雅手机正式发布! 在法国全手工打造的奢侈品',`a_content`='&lt;p&gt;&amp;quot;现在跨界联姻，时尚、汽车以及运动品牌联合手机制造商联合发布手机产品在行业里已经不再新鲜，上周我们给大家报道过著名手表制造商瑞士泰格·豪雅（Tag Heuer） 联合法国的手机制造商Modelabs发布的一款奢华手机的部分谍照，而近日该手机终于被正式发布了...&amp;quot;&lt;/p&gt;&lt;br/&gt;&lt;ul style=&quot;list-style-type: none;&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 0px; padding: 0px;&quot;&gt;&amp;nbsp; &lt;br/&gt;&lt;/p&gt;&lt;p class=&quot;autor&quot; style=&quot;margin-top: 10px; margin-bottom: 10px; padding: 0px; overflow: hidden; clear: both; display: inline-block; color: rgb(131, 131, 131); width: 482.391px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/ul&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`a_desc`='&quot;现在跨界联姻，时尚、汽车以及运动品牌联合手机制造商联合发布手机产品在行业里已经不再新鲜，上周我们给大家报道过著名手表制造商瑞士泰格·豪雅（Tag Heuer） 联合法国的手机制造商Modelabs发布的一款奢华手机的部分谍照，而近日该手机终于被正式发布了...&quot;
+',`pid`='1',`a_keyword`='个人博客',`a_img`='/Uploads/image/20171116/1510805892437375.jpg',`a_show`='0',`a_original`='1',`a_root`='admin',`a_time`='1510812991',`a_system`='Win 7',`a_ip`='127.0.0.1' WHERE `a_id` = 16 [ RunTime:0.0098s ]
+
+[ 2017-11-16T14:16:34+08:00 ] 127.0.0.1 /Admin/Article/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article` WHERE `a_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_id desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: info E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 33 行.
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 57 行.
+NOTIC: [8] Undefined variable: art E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 60 行.
+NOTIC: [8] Undefined variable: cat E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 78 行.
+NOTIC: [8] Undefined variable: user E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 87 行.
+NOTIC: [8] Undefined variable: comment E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 88 行.
+NOTIC: [8] Undefined variable: system E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 99 行.
+NOTIC: [8] Undefined variable: album E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 102 行.
+NOTIC: [8] Undefined variable: picture E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 109 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+NOTIC: [8] Undefined index: c_show E:\fish\Runtime\Cache\Admin\fbc86cfc035c3673480748a2487b8409.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+

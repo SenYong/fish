@@ -1,0 +1,1197 @@
+[ 2017-11-28T10:27:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_show` = 0  [ RunTime:0.0059s ]
+SQL: SELECT * FROM `fh_cat` ORDER BY c_id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_time desc LIMIT 6   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_log` ORDER BY l_time desc LIMIT 6   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `fh_say` ORDER BY s_time desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT `c_id`,`c_name` FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT `a_id`,`a_name`,`a_img`,`a_time`,`a_hit`,`c_name` FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id  ORDER BY a_hit desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 22 行.
+NOTIC: [8] Undefined variable: article E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 23 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 178 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 178 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 178 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 178 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2017-11-28T10:27:18+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+
+[ 2017-11-28T11:22:36+08:00 ] 127.0.0.1 /Public/Admin/Img/gritter.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+
+[ 2017-11-28T11:28:45+08:00 ] 127.0.0.1 /journal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_show` = 0  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `fh_cat` ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_time desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_log` ORDER BY l_time desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_say` ORDER BY s_time desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT `c_id`,`c_name` FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT `a_id`,`a_name`,`a_img`,`a_time`,`a_hit`,`c_name` FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id  ORDER BY a_hit desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_log` WHERE `l_show` = 0  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 22 行.
+NOTIC: [8] Undefined variable: article E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 23 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 26 行.
+NOTIC: [8] Undefined index: a_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 51 行.
+NOTIC: [8] Undefined index: a_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 54 行.
+NOTIC: [8] Undefined index: a_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 51 行.
+NOTIC: [8] Undefined index: a_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 54 行.
+NOTIC: [8] Undefined index: a_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 51 行.
+NOTIC: [8] Undefined index: a_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 54 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 127 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 127 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 127 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 127 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2017-11-28T11:28:47+08:00 ] 127.0.0.1 /say.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_say` WHERE `s_show` = 0 ORDER BY s_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 22 行.
+NOTIC: [8] Undefined variable: article E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 23 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 24 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2017-11-28T11:28:55+08:00 ] 127.0.0.1 /sayinfo-5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fh_say` WHERE `s_id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_say_c` [ RunTime:0.0020s ]
+SQL: UPDATE `fh_say` SET `s_hit`=s_hit+1 WHERE `s_id` = 5 [ RunTime:0.0098s ]
+SQL: SELECT * FROM `fh_say` WHERE `s_id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_say` WHERE ( s_id <5 ) ORDER BY s_id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_say` WHERE ( s_id >5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_say_c` WHERE `sc_pid` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_say_c` WHERE `sc_pid` = 5 ORDER BY sc_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\dc59850950b4e700075347f9c551ac2c.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\dc59850950b4e700075347f9c551ac2c.php 第 22 行.
+NOTIC: [8] Undefined variable: article E:\fish\Runtime\Cache\Home\dc59850950b4e700075347f9c551ac2c.php 第 23 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\dc59850950b4e700075347f9c551ac2c.php 第 24 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\dc59850950b4e700075347f9c551ac2c.php 第 26 行.
+NOTIC: [8] Undefined index: s_name E:\fish\Runtime\Cache\Home\dc59850950b4e700075347f9c551ac2c.php 第 67 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\dc59850950b4e700075347f9c551ac2c.php 第 178 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\dc59850950b4e700075347f9c551ac2c.php 第 178 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\dc59850950b4e700075347f9c551ac2c.php 第 178 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\dc59850950b4e700075347f9c551ac2c.php 第 178 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\dc59850950b4e700075347f9c551ac2c.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2017-11-28T11:29:06+08:00 ] 127.0.0.1 /say.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_show` = 0  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `fh_cat` ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_time desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_log` ORDER BY l_time desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_say` ORDER BY s_time desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT `c_id`,`c_name` FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT `a_id`,`a_name`,`a_img`,`a_time`,`a_hit`,`c_name` FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id  ORDER BY a_hit desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_say` WHERE `s_show` = 0 ORDER BY s_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 22 行.
+NOTIC: [8] Undefined variable: article E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 23 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 24 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2017-11-28T11:40:50+08:00 ] 127.0.0.1 /article.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_show` = 0  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `fh_cat` ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_time desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_log` ORDER BY l_time desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_say` ORDER BY s_time desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT `c_id`,`c_name` FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT `a_id`,`a_name`,`a_img`,`a_time`,`a_hit`,`c_name` FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id  ORDER BY a_hit desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 132 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 132 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 132 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 132 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2017-11-28T11:41:10+08:00 ] 127.0.0.1 /cat-3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_show` = 0  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `fh_cat` ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_time desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_log` ORDER BY l_time desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_say` ORDER BY s_time desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT `c_id`,`c_name` FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT `a_id`,`a_name`,`a_img`,`a_time`,`a_hit`,`c_name` FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id  ORDER BY a_hit desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_cat` INNER JOIN fh_article on fh_article.pid = fh_cat.c_id  WHERE `c_id` = '3'  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2017-11-28T11:41:13+08:00 ] 127.0.0.1 /cat-1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_cat` INNER JOIN fh_article on fh_article.pid = fh_cat.c_id  WHERE `c_id` = '1'  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2017-11-28T12:06:16+08:00 ] 127.0.0.1 /artinfo-15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_show` = 0  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `fh_cat` ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_time desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_log` ORDER BY l_time desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_say` ORDER BY s_time desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT `c_id`,`c_name` FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT `a_id`,`a_name`,`a_img`,`a_time`,`a_hit`,`c_name` FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id  ORDER BY a_hit desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_article_c` [ RunTime:0.0021s ]
+SQL: UPDATE `fh_article` SET `a_hit`=a_hit+1 WHERE `a_id` = 15 [ RunTime:0.0095s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` WHERE ( a_id < 15 ) ORDER BY a_id desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_article` WHERE ( a_id > 15 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article_c` WHERE `ac_pid` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article_c` WHERE `ac_pid` = 15 ORDER BY ac_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2017-11-28T12:06:24+08:00 ] 127.0.0.1 /artinfo-16.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 16 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `fh_article_c` [ RunTime:0.0020s ]
+SQL: UPDATE `fh_article` SET `a_hit`=a_hit+1 WHERE `a_id` = 16 [ RunTime:0.0033s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 16 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fh_article` WHERE ( a_id < 16 ) ORDER BY a_id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` WHERE ( a_id > 16 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article_c` WHERE `ac_pid` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article_c` WHERE `ac_pid` = 16 ORDER BY ac_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2017-11-28T12:06:52+08:00 ] 127.0.0.1 /artinfo-8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_show` = 0  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fh_cat` ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_time desc LIMIT 6   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fh_log` ORDER BY l_time desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_say` ORDER BY s_time desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT `c_id`,`c_name` FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT `a_id`,`a_name`,`a_img`,`a_time`,`a_hit`,`c_name` FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id  ORDER BY a_hit desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_article_c` [ RunTime:0.0020s ]
+SQL: UPDATE `fh_article` SET `a_hit`=a_hit+1 WHERE `a_id` = 8 [ RunTime:0.0109s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` WHERE ( a_id < 8 ) ORDER BY a_id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` WHERE ( a_id > 8 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article_c` WHERE `ac_pid` = 8 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article_c` WHERE `ac_pid` = 8 ORDER BY ac_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 26 行.
+NOTIC: [2] Missing argument 2 for getIp(), called in E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php on line 111 and defined E:\fish\Application\Common\Common\function.php 第 233 行.
+NOTIC: [2] Missing argument 2 for getIp(), called in E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php on line 111 and defined E:\fish\Application\Common\Common\function.php 第 233 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2017-11-28T12:11:13+08:00 ] 127.0.0.1 /Public/Admin/Img/gritter.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+
+[ 2017-11-28T12:12:27+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_show` = 0  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fh_cat` ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_time desc LIMIT 6   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fh_log` ORDER BY l_time desc LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_say` ORDER BY s_time desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT `c_id`,`c_name` FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT `a_id`,`a_name`,`a_img`,`a_time`,`a_hit`,`c_name` FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id  ORDER BY a_hit desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 22 行.
+NOTIC: [8] Undefined variable: article E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 23 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 178 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 178 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 178 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 178 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\ccc714bf1ad7378d61a4beb8be3a2914.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2017-11-28T12:12:31+08:00 ] 127.0.0.1 /say.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_say` WHERE `s_show` = 0 ORDER BY s_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 22 行.
+NOTIC: [8] Undefined variable: article E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 23 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 24 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009321s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-11-28T14:33:35+08:00 ] 127.0.0.1 /Public/Admin/Img/gritter.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+
+[ 2017-11-28T14:33:49+08:00 ] 127.0.0.1 /say.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_show` = 0  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fh_cat` ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_time desc LIMIT 6   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fh_log` ORDER BY l_time desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_say` ORDER BY s_time desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT `c_id`,`c_name` FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT `a_id`,`a_name`,`a_img`,`a_time`,`a_hit`,`c_name` FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id  ORDER BY a_hit desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_say` WHERE `s_show` = 0 ORDER BY s_time desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 22 行.
+NOTIC: [8] Undefined variable: article E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 23 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 24 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\63beaf5571d1423e103f5cfd7a9f769a.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2017-11-28T14:33:51+08:00 ] 127.0.0.1 /journal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_log` WHERE `l_show` = 0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 22 行.
+NOTIC: [8] Undefined variable: article E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 23 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 26 行.
+NOTIC: [8] Undefined index: a_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 51 行.
+NOTIC: [8] Undefined index: a_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 54 行.
+NOTIC: [8] Undefined index: a_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 51 行.
+NOTIC: [8] Undefined index: a_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 54 行.
+NOTIC: [8] Undefined index: a_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 51 行.
+NOTIC: [8] Undefined index: a_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 54 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 127 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 127 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 127 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 127 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\d37a08a0f58d5adb8182cbdfb75c382e.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2017-11-28T14:33:54+08:00 ] 127.0.0.1 /article.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 132 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 132 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 132 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 132 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\6b2c666fea9c5f7a6ebc0fb27b266a7f.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2017-11-28T14:33:56+08:00 ] 127.0.0.1 /cat-1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `fh_cat` INNER JOIN fh_article on fh_article.pid = fh_cat.c_id  WHERE `c_id` = '1'  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2017-11-28T14:33:58+08:00 ] 127.0.0.1 /cat-3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_cat` INNER JOIN fh_article on fh_article.pid = fh_cat.c_id  WHERE `c_id` = '3'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2017-11-28T14:34:08+08:00 ] 127.0.0.1 /cat-1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_show` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fh_cat` ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_time desc LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_log` ORDER BY l_time desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_say` ORDER BY s_time desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT `c_id`,`c_name` FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT `a_id`,`a_name`,`a_img`,`a_time`,`a_hit`,`c_name` FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id  ORDER BY a_hit desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_cat` INNER JOIN fh_article on fh_article.pid = fh_cat.c_id  WHERE `c_id` = '1'  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2017-11-28T14:34:13+08:00 ] 127.0.0.1 /cat-3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_cat` INNER JOIN fh_article on fh_article.pid = fh_cat.c_id  WHERE `c_id` = '3'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-11-28T14:34:20+08:00 ] 127.0.0.1 /cat-4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_show` = 0  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `fh_cat` ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_time desc LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_log` ORDER BY l_time desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_say` ORDER BY s_time desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT `c_id`,`c_name` FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT `a_id`,`a_name`,`a_img`,`a_time`,`a_hit`,`c_name` FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id  ORDER BY a_hit desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_cat` INNER JOIN fh_article on fh_article.pid = fh_cat.c_id  WHERE `c_id` = '4'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2017-11-28T14:34:22+08:00 ] 127.0.0.1 /cat-3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_cat` INNER JOIN fh_article on fh_article.pid = fh_cat.c_id  WHERE `c_id` = '3'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-11-28T14:37:21+08:00 ] 127.0.0.1 /cat-3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_show` = 0  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `fh_cat` ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_time desc LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fh_log` ORDER BY l_time desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_say` ORDER BY s_time desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT `c_id`,`c_name` FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT `a_id`,`a_name`,`a_img`,`a_time`,`a_hit`,`c_name` FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id  ORDER BY a_hit desc LIMIT 5   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_cat` INNER JOIN fh_article on fh_article.pid = fh_cat.c_id  WHERE `c_id` = '3'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\200226fa27bcb84b933388965c992cd1.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2017-11-28T14:37:28+08:00 ] 127.0.0.1 /artinfo-20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 20 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fh_article_c` [ RunTime:0.0021s ]
+SQL: UPDATE `fh_article` SET `a_hit`=a_hit+1 WHERE `a_id` = 20 [ RunTime:0.0113s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` WHERE ( a_id < 20 ) ORDER BY a_id desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_article` WHERE ( a_id > 20 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article_c` WHERE `ac_pid` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article_c` WHERE `ac_pid` = 20 ORDER BY ac_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2017-11-28T14:39:13+08:00 ] 127.0.0.1 /artinfo-20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_show` = 0  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_cat` ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_time desc LIMIT 6   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fh_log` ORDER BY l_time desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_say` ORDER BY s_time desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT `c_id`,`c_name` FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT `a_id`,`a_name`,`a_img`,`a_time`,`a_hit`,`c_name` FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id  ORDER BY a_hit desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_article_c` [ RunTime:0.0021s ]
+SQL: UPDATE `fh_article` SET `a_hit`=a_hit+1 WHERE `a_id` = 20 [ RunTime:0.0032s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` WHERE ( a_id < 20 ) ORDER BY a_id desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_article` WHERE ( a_id > 20 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article_c` WHERE `ac_pid` = 20 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article_c` WHERE `ac_pid` = 20 ORDER BY ac_time desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 26 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 27 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 29 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 30 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 31 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 202 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 202 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 202 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 202 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2017-11-28T14:40:07+08:00 ] 127.0.0.1 /artinfo-20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_show` = 0  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fh_cat` ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_time desc LIMIT 6   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fh_log` ORDER BY l_time desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_say` ORDER BY s_time desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT `c_id`,`c_name` FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT `a_id`,`a_name`,`a_img`,`a_time`,`a_hit`,`c_name` FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id  ORDER BY a_hit desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `fh_article_c` [ RunTime:0.0021s ]
+SQL: UPDATE `fh_article` SET `a_hit`=a_hit+1 WHERE `a_id` = 20 [ RunTime:0.0112s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` WHERE ( a_id < 20 ) ORDER BY a_id desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fh_article` WHERE ( a_id > 20 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article_c` WHERE `ac_pid` = 20 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article_c` WHERE `ac_pid` = 20 ORDER BY ac_time desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-11-28T14:46:09+08:00 ] 127.0.0.1 /Public/Admin/Img/gritter.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+
+[ 2017-11-28T14:46:18+08:00 ] 127.0.0.1 /artinfo-20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `fh_article` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `fh_cat` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_log` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_say` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fh_system` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_show` = 0  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fh_cat` ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` ORDER BY a_time desc LIMIT 6   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fh_log` ORDER BY l_time desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_say` ORDER BY s_time desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT `c_id`,`c_name` FROM `fh_cat` WHERE `c_show` = 0 ORDER BY c_id desc  [ RunTime:0.0001s ]
+SQL: SELECT `a_id`,`a_name`,`a_img`,`a_time`,`a_hit`,`c_name` FROM `fh_article` INNER JOIN fh_cat on fh_article.pid = fh_cat.c_id  ORDER BY a_hit desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fh_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `fh_article_c` [ RunTime:0.0021s ]
+SQL: UPDATE `fh_article` SET `a_hit`=a_hit+1 WHERE `a_id` = 20 [ RunTime:0.0100s ]
+SQL: SELECT * FROM `fh_article` WHERE `a_id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `fh_article` WHERE ( a_id < 20 ) ORDER BY a_id desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fh_article` WHERE ( a_id > 20 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fh_article_c` WHERE `ac_pid` = 20 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `fh_article_c` WHERE `ac_pid` = 20 ORDER BY ac_time desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined variable: index E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 21 行.
+NOTIC: [8] Undefined variable: about E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 22 行.
+NOTIC: [8] Undefined variable: log E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 24 行.
+NOTIC: [8] Undefined variable: say E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 25 行.
+NOTIC: [8] Undefined variable: board E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 26 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+NOTIC: [8] Undefined index: c_id E:\fish\Runtime\Cache\Home\7f11d8fd48ca18f0fc1c2c81c774938b.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+

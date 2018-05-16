@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>小鱼博客</title>
+ <meta name="关键字" content="">
+ <meta name="Keywords" content="个人网站,小鱼博客,小鱼网站,小鱼,个人网站">
+ <meta name="description" content="小鱼博客是一个分享技术文章、个人生活的网站">
+ <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+ <link href="__CSS__/buju.css" rel="stylesheet">
+ <link href="__CSS__/index.css" rel="stylesheet">
+ <script type="text/javascript" src="__JS__/jquery.min.js"></script>
+ <script type="text/javascript" src="__JS__/sliders.js"></script>
+</head>
+<body>
+  <include file="Public:header" />
+  <article>
+    <div class="l_box f_l">
+	   <div class="topnews">
+  	    <h2> 
+    	     首页  >  <a href="{:U('/journal')}">日志</a>  >  <a style="color:#0196E3">{$info.l_name}</a>
+  	    </h2>
+        <input type="hidden" value="{$info.l_id}" id="lc_pid">
+        <input type="hidden" value="" id="lc_name">
+        <input type="hidden" value="" id="lc_img">
+        <input type="hidden" value="__SELF__" id="jump">
+        <div class="artContent">
+            <div class="artTitle">{$info.l_name}</div>
+            <div class="author">
+               <div class="auto">
+                   <span class="au01">{$info.l_root}</span>
+                   <span class="au02">{$info.l_time|date="Y-m-d",###}</span>
+               </div>
+            </div>
+            <div class="info">{$info.l_content|htmlspecialchars_decode}</div>
+        </div>
+        <div class="copyright_author">
+            <p>
+              <strong>版权声明：</strong>
+              本站原创文章，于{$info.l_time|date="Y-m-d",###}，由
+              <a href="{:U('/abouts')}" target="_blank">{$info.l_root}</a>
+              发表
+            </p>
+            <p class="p-hidden">
+              <strong>转载请注明：</strong>
+              <a>{$info.l_name}</a>
+               | 
+              <a href="{:U('/index')}">小鱼博客</a>
+            </p>
+        </div>
+        <!-- JiaThis Button BEGIN -->
+        <div class="jiathis_style">
+            <span class="jiathis_txt">分享到：</span>
+            <a class="jiathis_button_qzone"></a>
+            <a class="jiathis_button_tsina"></a>
+            <a class="jiathis_button_weixin"></a>
+            <a class="jiathis_button_cqq"></a>
+            <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+            <div class="clear"></div>
+        </div>
+        <script type="text/javascript" >
+        var jiathis_config={
+          summary:"",
+          shortUrl:false,
+          hideMore:true
+        }
+        </script>
+        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+        <!-- JiaThis Button END -->
+        <notempty name="prev['l_id']">
+           <div class="nextpage">
+              <b>上一篇:</b>
+              <a href="{:U('/loginfo-'.$prev['l_id'])}">{$prev.l_name}</a>
+           </div>
+        </notempty>
+        <notempty name="next['l_id']">
+          <div class="nextpage">
+            <b>下一篇:</b>
+            <a href="{:U('/loginfo-'.$next['l_id'])}">{$next.l_name}</a>
+          </div>
+        </notempty>
+        <div class="comment">
+            <div class="com_form">
+              <textarea class="input" id="saytext" name="saytext"></textarea>
+              <p>
+                <input type="button" class="sub_btn" value="提交">
+                <span class="emotion"></span>
+              </p>
+            </div>
+        </div>
+        <if condition="($num gt 0)">
+          <div class="board">
+            <div class="titles">
+               <div class="lt">评论</div>
+               <div class="rt"><span>{$num}</span>人参与,<span>{$num}</span>条评论</div>
+            </div>
+            <volist name="list" id="vo">
+               <div class="bList">
+                   <div class="lItem">
+                       <img src="{$vo.lc_img}" class="logo">
+                       <div class="lCont">
+                          <p class="p1">
+                            <span class="s1"><b class="name">{$vo.lc_name}</b>[{$vo.lc_ip|getIp}]</span>
+                            <span class="s2">{$vo.lc_time|getTime}</span>
+                          </p>
+                          <p class="p2">{$vo.lc_content|reFace}</p>
+                       </div>
+                   </div>
+                   <notempty name="vo['lc_retime']">
+                   <div class="lItem rItem">
+                     <img src="{$vo.lc_reimg}" class="logo">
+                     <div class="lCont">
+                        <p class="p1">
+                          <span class="s1"><b class="name">{$vo.lc_rename}</b>回复<b class="name1">{$vo.lc_name}</b></span>
+                          <span class="s2">{$vo.lc_retime|getTime}</span>
+                        </p>
+                        <p class="p2">{$vo.lc_recontent|reFaceMy}</p>
+                     </div>
+                   </div>
+                   </notempty>
+                </div>
+            </volist>
+          </div>
+        </if>
+	   </div><!--topnews-->
+	  </div><!--l_box f_l-->
+    <include file="Public:right" />
+  </article>
+<include file="Public:footer" />
+</body>
+</html>
+<script type="text/javascript" src="__JS__/jquery.qqFace.js"></script>
+<script>
+  $(function(){
+    $('.emotion').qqFace({
+      id : 'facebox', 
+      assign:'saytext', 
+      path:'/Public/Home/arclist/'
+    })
+    $(".sub_btn").click(function(){
+       var lc_pid = $('#lc_pid').val();
+       var lc_name = $('#lc_name').val();
+       var lc_img = $('#lc_img').val();
+       var lc_content = $('#saytext').val();
+       var jump = $('#jump').val();
+       if(lc_name == ''){
+          lc_name = '游客'
+       }
+       if(lc_img == ''){
+          lc_img = '/Public/Home/img/default.png';
+       }
+       if(lc_content == ''){
+          alert('评论内容不能为空');
+          return false;
+       }
+       $('.sub_btn').attr('disabled',true);
+       $.ajax({
+          url: '/Admin/Log/logContent',
+          type: 'post',
+          data: {'lc_pid':lc_pid, 'lc_name':lc_name, 'lc_img':lc_img, 'lc_content':lc_content},
+          success: function(data){
+            if(data.error == 0){
+               window.location.href = jump;
+            }else{
+               alert(data.msg);
+               $('.sub_btn').removeAttr('disabled');
+            }
+          }
+       })
+    })
+  })
+</script>

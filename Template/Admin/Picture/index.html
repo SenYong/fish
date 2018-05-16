@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>发布文章 - 小鱼博客管理系统</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/font-awesome.min.css">
+<link rel="apple-touch-icon-precomposed" href="__IMG__/icon/icon.png">
+<link rel="shortcut icon" href="__IMG__/icon/favicon.ico">
+<script src="__JS__/jquery-2.1.4.min.js"></script>
+</head>
+<body class="user-select">
+<section class="container-fluid">
+   <include file="Public:header" />
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-lg-10 col-md-offset-2 main" id="main">
+      <div class="row">
+        <div class="add-article-form">
+          <div class="col-md-9">
+            <empty name="info['p_id']">
+               <h1 class="page-header">新增相册</h1>
+            <else/>
+               <h1 class="page-header">修改相册</h1>
+               <input type="hidden" value="{$info.p_id}" id="pid">
+            </empty>
+            <input type="hidden" value="{$Think.session.uname}" id="root">
+            <div class="form-group">
+              <label for="article-title" class="sr-only">标题</label>
+              <input type="text" id="picName" name="title" class="form-control" placeholder="请输入图集名称"  value="{$info.p_name}">
+            </div>
+            <div class="add-article-box">
+              <h2 class="add-article-box-title"><span>标题图片</span></h2>
+              <div class="add-article-box-content">
+                <input type="text" class="form-control" placeholder="点击按钮选择图片" id="pictureUpload" name="titlepic" value="{$info.p_img}" disabled>
+              </div>
+              <div class="add-article-box-footer">
+                <button class="btn btn-default" type="button" ID="upImage">选择</button>
+              </div>
+            </div>
+            <div class="add-article-box">
+              <h2 class="add-article-box-title"><span>描述</span></h2>
+              <div class="add-article-box-content">
+              	<textarea class="form-control" name="describe" id="picDesc">{$info.p_desc}</textarea>
+                <span class="prompt-text">描述是可选的手工创建的内容总结，并可以在网页描述中使用</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h1 class="page-header">操作</h1>
+            <div class="add-article-box">
+              <h2 class="add-article-box-title"><span>相册名</span></h2>
+              <div class="add-article-box-content">
+                <ul class="category-list">
+                  <volist name="albumList" id="vo">
+                      <empty name="info['p_id']">
+                          <li>
+                            <label>
+                               <input name="category" type="radio" value="{$vo.al_id}">{$vo.al_name} 
+                            </label>
+                          </li>
+                      <else/>
+                          <li>
+                            <label>
+                               <input name="category" type="radio" value="{$vo.al_id}" <eq name="info['pid']" value="$vo['al_id']">checked</eq> >{$vo.al_name} 
+                            </label>
+                          </li>
+                      </empty>
+                  </volist>
+                </ul>
+              </div>
+            </div>      
+            <div class="add-article-box">
+              <h2 class="add-article-box-title"><span>发布</span></h2>
+              <div class="add-article-box-content">
+              	<p>
+                   <label>状态：</label>
+                   <span class="article-status-display"><empty name="info['p_id']">未<else/>已</empty>发布</span>
+                </p>
+                <p>
+                   <label>发布于：</label>
+                   <span class="article-time-display">
+                      <empty name="info['p_id']">
+                         <input style="border: none;" type="datetime" name="time" value="{:date('Y-m-d H:i:s', time())}" disabled/>
+                      <else/>
+                         <input style="border: none;" type="datetime" name="time" value="{$info.p_time|getTime}" disabled/>
+                      </empty>
+                   </span>
+                </p>
+              </div>
+              <div class="add-article-box-footer">
+                 <empty name="info['al_id']">
+                    <button class="btn btn-primary" type="submit" name="submit" id="addPic">发布</button>
+                 <else/>
+                    <button class="btn btn-primary" type="submit" name="submit" id="editPic">修改</button>
+                 </empty>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<include file="Public:info"/>
+<script src="__JS__/bootstrap.min.js"></script> 
+<script src="__JS__/admin-scripts.js"></script>
+<script src="__LIB__/ueditor.config.js"></script> 
+<script src="__LIB__/ueditor.all.min.js"> </script> 
+<script src="__LIB__/lang/zh-cn/zh-cn.js"></script>  
+<script id="uploadEditor" type="text/plain" style="display:none;"></script>
+<script src="__JS__/jquery.gritter.min.js"></script>
+<script src="__JS__/my.js"></script>
+<script type="text/javascript">
+var _uploadEditor;
+var imgUrl = '';
+$(function () {
+    //重新实例化一个编辑器，防止在上面的editor编辑器中显示上传的图片或者文件
+    _uploadEditor = UE.getEditor('uploadEditor');
+    _uploadEditor.ready(function () {
+        //设置编辑器不可用
+        //_uploadEditor.setDisabled();
+        //隐藏编辑器，因为不会用到这个编辑器实例，所以要隐藏
+        _uploadEditor.hide();
+        //侦听图片上传
+        _uploadEditor.addListener('beforeInsertImage', function (t, arg) {
+            //将地址赋值给相应的input,只去第一张图片的路径
+            for(var i = 0; i < arg.length; i++){
+               i == arg.length - 1 ? imgUrl += arg[i].src : imgUrl += arg[i].src + ',';
+            }
+            $("#pictureUpload").attr("value", imgUrl);
+            //图片预览
+            //$("#imgPreview").attr("src", arg[0].src);
+        })
+        //侦听文件上传，取上传文件列表中第一个上传的文件的路径
+        _uploadEditor.addListener('afterUpfile', function (t, arg) {
+            $("#fileUpload").attr("value", _uploadEditor.options.filePath + arg[0].url);
+        })
+    });
+});
+//弹出图片上传的对话框
+$('#upImage').click(function () {
+    var myImage = _uploadEditor.getDialog("insertimage");
+    myImage.open();
+});
+//弹出文件上传的对话框
+function upFiles() {
+    var myFiles = _uploadEditor.getDialog("attachment");
+    myFiles.open();
+}
+$('#addPic').click(function(){
+   var p_root = $('#root').val();
+   var p_name = $('#picName').val();
+   var p_img = $('#pictureUpload').val();
+   var p_desc = $('#picDesc').val();
+   var pid= $("input[name='category']:checked").val();
+   if(p_name == ''){
+     error("图集名称不能为空");
+     return false;
+   }
+   if(p_img == ''){
+     error('上传图片不能为空');
+     return false;
+   }
+   if(pid == ''){
+     error("相册名不能为空");
+     return false;
+   }
+   var data = {'p_root':p_root, 'p_name':p_name, 'p_img':p_img, 'p_desc':p_desc, 'pid':pid};
+   console.log(data);
+   $('#addPic').attr('disabled',true);
+   $.ajax({
+     url: '/Admin/Picture/add',
+     type: 'post',
+     async: true,
+     data: {'p_root':p_root, 'p_name':p_name, 'p_img':p_img, 'p_desc':p_desc, 'pid':pid},
+     success: function(data){
+        console.log(data);
+        if(data.error == 0){
+          success('',data.msg,'/Admin/Picture/pictureList');
+        }else{
+          error(data.msg);
+          $('#addPic').removeAttr('disabled');
+        }
+     },
+     error: function(data){
+        error(data.msg);
+        $('#addPic').removeAttr('disabled');
+     }
+   })
+})
+
+$('#editAlbum').click(function(){
+   var al_id = $('#alid').val();
+   var al_root = $('#root').val();
+   var al_name = $('#albumName').val();
+   var al_img = $('#pictureUpload').val();
+   var al_content = $('#albumDesc').val();
+   var al_show= $("input[name='visibility']:checked").val();
+   if(al_name == ''){
+     error("相册名不能为空");
+     return false;
+   }
+   if(al_img == ''){
+     error('请选择封面');
+     return false;
+   }
+   if(al_show == ''){
+     error('请选择公开度');
+     return false;
+   }
+   $('#editAlbum').attr('disabled',true);
+   $.ajax({
+     url: '/Admin/Album/modify',
+     type: 'post',
+     async: true,
+     data: {al_id, al_root, al_name, al_img, al_content, al_show},
+     success: function(data){
+        if(data.error == 0){
+          success('',data.msg,'/Admin/Album/albumList');
+        }else{
+          error(data.msg);
+          $('#editAlbum').removeAttr('disabled');
+        }
+     },
+     error: function(data){
+        error(data.msg);
+        $('#editAlbum').removeAttr('disabled');
+     }
+   })
+})
+</script>
+</body>
+</html>
+

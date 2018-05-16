@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>小鱼博客</title>
+ <meta name="关键字" content="">
+ <meta name="Keywords" content="个人网站,小鱼博客,小鱼网站,小鱼,个人网站">
+ <meta name="description" content="小鱼博客是一个分享技术文章、个人生活的网站">
+ <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+ <link href="__CSS__/buju.css" rel="stylesheet">
+ <link href="__CSS__/index.css" rel="stylesheet">
+ <script type="text/javascript" src="__JS__/jquery.min.js"></script>
+ <script type="text/javascript" src="__JS__/sliders.js"></script>
+</head>
+<body>
+  <include file="Public:header" />
+  <article>
+    <div class="l_box f_l">
+	   <div class="topnews">
+  	    <h2>
+    	     <a href="{:U('/article')}">抚今追昔</a>
+  	    </h2>
+        <div id="list">
+          <volist name="list" id="vo">
+    		    <div class="blogs">
+      		      <figure>
+      			      <img src="{$vo.l_img}">
+      			   </figure>
+      			   <ul>
+      			      <h3><a href="{:U('/loginfo-'.$vo['l_id'])}">{$vo.l_name}</a></h3>
+      				    <p>{$vo.l_desc}</p>
+      			      <p class="autor">
+        				    <span class="lm f_l">
+        					    <a href="/">{$vo.l_name}</a>
+        					 </span>
+      					   <span class="dtime f_l">{$vo.l_time|date="Y-m-d",###}</span>
+        					 <span class="viewnum f_r">
+        					    浏览（<a href="{:U('/artinfo-'.$vo['a_id'])}">{$vo.l_hit}</a>）
+                   </span>
+        					 <span class="pingl f_r">	
+        					    评论（<a href="{:U('/artinfo-'.$vo['a_id'])}">{$vo.l_num}</a>）
+                   </span>
+      				    </p>
+      			   </ul>
+    	      </div>
+          </volist>
+        </div>
+        <div class="more">查看更多</div>
+	   </div><!--topnews-->
+	  </div><!--l_box f_l-->
+    <include file="Public:right" />
+  </article>
+<include file="Public:footer" />
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function(){
+       var page = 0;
+       $('.more').click(function(){
+         $.ajax({
+            url: '/Home/Journal/getData',
+            type: 'post',
+            data: {'page':page},
+            success: function(data){
+              if(data.length){
+                $.each(data,function(index,item){
+                   var l_id = item.l_id
+                   var str = "<div class=\"blogs\"><figure><img src=\""+item.l_img+"\"></figure><ul><h3><a href=\"{:U('/artinfo-'.'l_id')}\">"+item.l_name+"</a></h3><p>"+item.l_desc+"</p><p class=\"autor\"><span class=\"lm f_l\"><a href=\"\">"+item.l_name+"</a></span><span class=\"dtime f_l\">"+date(item.l_time)+"</span><span class=\"viewnum f_r\">浏览（<a href=\"{:U('/artinfo-'.'l_id')}\">"+item.l_hit+"</a>）</span><span class=\"pingl f_r\">评论（<a href=\"{:U('/artinfo-'.'l_id')}\">"+item.l_num+"</a>）</span></p></ul></figure></div>";
+                   str=str.replace(/\l_id/g,l_id);  
+                   $('#list').append(str);
+                })
+                page+=1;
+              }else{
+                $('.more').hide();
+              }
+            }
+         })
+       })
+    })
+    function date(time){
+        var d = new Date(time * 1000);
+        var date = (d.getFullYear()) + "-" +  
+           (d.getMonth() + 1) + "-" + 
+           (d.getDate());
+        return date;
+    }
+</script>

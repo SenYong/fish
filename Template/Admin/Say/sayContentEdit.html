@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>发布文章 - 小鱼博客管理系统</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/font-awesome.min.css">
+<link rel="apple-touch-icon-precomposed" href="__IMG__/icon/icon.png">
+<link rel="shortcut icon" href="__IMG__/icon/favicon.ico">
+<script src="__JS__/jquery-2.1.4.min.js"></script>
+</head>
+<body class="user-select">
+<section class="container-fluid">
+   <include file="Public:header" />
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-lg-10 col-md-offset-2 main" id="main">
+      <div class="row">
+        <div class="add-article-form">
+          <div class="col-md-9">
+              <h1 class="page-header">说说评论回复</h1>
+              <input type="hidden" value="{$Think.session.uname}" id="sc_rename">
+              <input type="hidden" value="{$Think.session.uimg}" id="sc_reimg">
+              <input type="hidden" value="{$info.sc_id}" id="sc_id">
+              <h2 class="add-article-box-title"><span>用户名</span></h2>
+              <div class="form-group">
+                <div id="article-title" class="form-control">{$info.sc_name}</div>
+              </div>
+              <div class="add-article-box">
+                <h2 class="add-article-box-title"><span>评论内容</span></h2>
+                <div class="add-article-box-content">
+                  <div class="form-control" id="desc">{$info.sc_content|reFace|html_entity_decode}</div>
+                </div>
+              </div>
+              <h2 class="add-article-box-title"><span>评论时间</span></h2>
+              <div class="form-group"> 
+                 <div id="article-title" class="form-control">{$info.sc_time|getTime}</div>
+              </div>
+              <h2 class="add-article-box-title"><span>回复内容</span></h2>
+              <div class="form sayForm" id="comment">
+                  <div class="warp_text">
+                      <textarea id="content-text" placeholder="回复些什么呢..."></textarea>
+                  </div>
+                  <div class="form-group home-from-box">
+                      <a href="javascript:void(0);" id="rl_exp_btn"><span class="emotion hidden-xs"></span></a>
+                      <div class="rl_exp" id="rl_bq" style="display:none;">
+                        <ul class="rl_exp_tab clearfix">
+                          <li><a href="javascript:void(0);" class="selected">默认</a></li>
+                          <li><a href="javascript:void(0);">拜年</a></li>
+                          <li><a href="javascript:void(0);">暴走漫画</a></li>
+                          <li><a href="javascript:void(0);">漫画</a></li>
+                        </ul>
+                        <ul class="rl_exp_main clearfix rl_selected"></ul>
+                        <ul class="rl_exp_main clearfix" style="display:none;"></ul>
+                        <ul class="rl_exp_main clearfix" style="display:none;"></ul>
+                        <ul class="rl_exp_main clearfix" style="display:none;"></ul>
+                        <a href="javascript:void(0);" class="close">×</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+            <h1 class="page-header">回复</h1>
+            <div class="add-article-box">
+              <h2 class="add-article-box-title"><span>回复</span></h2>
+              <div class="add-article-box-content">
+              	<p>
+                   <label>状态：</label>
+                   <empty name="info['sc_retime']">
+                      <span class="article-status-display">未回复</span>
+                   <else/>
+                      <span class="article-status-display">已回复</span>
+                   </empty>
+                </p>
+                <p>
+                   <notempty name="info['sc_retime']">
+                       <label>回复于:</label>
+                       <span class="article-time-display">
+                          <input style="border: none;" type="datetime" name="time" value="$info['sc_retime']" disabled/>
+                       </span>
+                   </notempty>
+                </p>
+              </div>
+              <div class="add-article-box-footer">
+                  <button class="btn" type="button" style="margin-left: 20px;"><a href="/Admin/Say/sayContentList">取消</a></button>
+                  <button class="btn btn-primary" type="submit" name="submit" id="reSay">回复</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<include file="Public:info" />
+<script src="__JS__/bootstrap.min.js"></script> 
+<script src="__JS__/admin-scripts.js"></script>
+<script src="__JS__/jquery.gritter.min.js"></script>
+<script src="__JS__/my.js"></script>
+<script src="__JS__/rl_exp.js"></script>
+<script type="text/javascript">
+$('#reSay').click(function(){
+   var sc_id = $('#sc_id').val();
+   var sc_recontent = $('#content-text').val();
+   var sc_rename = $('#sc_rename').val();
+   var sc_reimg = $('#sc_reimg').val();
+   if(sc_recontent == ''){
+     error('回复内容不能为空');
+   }
+   if(sc_reimg == ''){
+      sc_reimg = '/Public/Home/img/default.png';
+   }
+   $('#reSay').attr('disabled',true);
+   $.ajax({
+     url: '/Admin/Say/sayContentModify',
+     type: 'post',
+     async: true,
+     data: {'sc_id':sc_id, 'sc_rename':sc_rename, 'sc_reimg':sc_reimg, 'sc_recontent':sc_recontent},
+     success: function (data) {
+         if(data.error == 0){
+            success('',data.msg,'/Admin/Say/sayContentList');
+         }else{
+            error(data.msg);
+            $('#reSay').removeAttr('disabled');
+         }
+     },
+     error: function(data){
+         error(data.msg);
+         $('#reSay').removeAttr('disabled');  
+     }
+   })
+})
+</script>
+</body>
+</html>
+

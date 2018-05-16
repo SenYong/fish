@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>发布说说 - 小鱼博客管理系统</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/font-awesome.min.css">
+<link rel="apple-touch-icon-precomposed" href="__IMG__/icon/icon.png">
+<link rel="shortcut icon" href="__IMG__/icon/favicon.ico">
+<script src="__JS__/jquery-2.1.4.min.js"></script>
+</head>
+<body class="user-select">
+<section class="container-fluid">
+   <include file="Public:header" />
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-lg-10 col-md-offset-2 main" id="main">
+      <div class="row">
+        <div class="add-article-form">
+          <div class="col-md-9">
+            <empty name="info['s_id']">
+               <h1 class="page-header">发布新说说</h1>
+            <else/>
+               <h1 class="page-header">修改说说</h1>
+               <input type="hidden" value="{$info.s_id}" id="sid">
+            </empty>
+            <input type="hidden" value="{$Think.session.uname}" id="root">
+            <div class="add-article-box">
+              <h2 class="add-article-box-title"><span>内容</span></h2>
+              <div class="add-article-box-content">
+                <textarea class="form-control" id="desc">{$info.s_content}</textarea>
+                <span class="prompt-text">描述是可选的手工创建的内容总结，并可以在网页描述中使用</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h1 class="page-header">操作</h1>
+            <div class="add-article-box">
+              <h2 class="add-article-box-title"><span>发布</span></h2>
+              <div class="add-article-box-content">
+              	<p>
+                   <label>状态：</label>
+                   <span class="article-status-display">未发布</span>
+                </p>
+                <p>
+                   <label>公开度：</label>
+                   <input type="radio" name="visibility" value="0" <eq name="info['s_show']" value="0">checked</eq> />公开 
+                   <input type="radio" name="visibility" value="1" <eq name="info['s_show']" value="1">checked</eq> />加密
+                </p>
+                <p>
+                   <label>发布于：</label>
+                   <span class="article-time-display">
+                      <empty name="info['a_id']">
+                         <input style="border: none;" type="datetime" name="time" value="{:date('Y-m-d H:i:s', time())}" disabled/>
+                      <else/>
+                         <input style="border: none;" type="datetime" name="time" value="{$info.a_time|getTime}" disabled/>
+                      </empty>
+                   </span>
+                </p>
+              </div>
+              <div class="add-article-box-footer">
+                 <button class="btn" type="button" style="margin-left: 20px;"><a href="/Admin/Say/sayList">取消</a></button>
+                 <empty name="info['s_id']">
+                    <button class="btn btn-primary" type="submit" name="submit" id="addSay">新增</button>
+                 <else/>
+                    <button class="btn btn-primary" type="submit" name="submit" id="editSay">修改</button>
+                 </empty>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<include file="Public:info"/>
+<script src="__JS__/bootstrap.min.js"></script> 
+<script src="__JS__/admin-scripts.js"></script>
+<script src="__LIB__/ueditor.config.js"></script> 
+<script src="__LIB__/ueditor.all.min.js"> </script> 
+<script src="__LIB__/lang/zh-cn/zh-cn.js"></script>  
+<script src="__JS__/jquery.gritter.min.js"></script>
+<script src="__JS__/my.js"></script>
+<script type="text/javascript">
+$('#addSay').click(function(){
+   var s_root = $('#root').val();
+   var s_content = $('#desc').val();
+   var s_show= $("input[name='visibility']:checked").val();
+   if(s_content == ''){
+     error("内容不能为空");
+     return false;
+   }
+   if(s_show == ''){
+     error('请选择公开度');
+     return false;
+   }
+   $('#addSay').attr('disabled',true);
+   $.ajax({
+     url: '/Admin/Say/add',
+     type: 'post',
+     async: true,
+     data: {'s_content':s_content, 's_show':s_show,'s_root':s_root},
+     success: function(data){
+        console.log(data);
+        if(data.error == 0){
+          success('',data.msg,'/Admin/Say/sayList');
+        }else{
+          error(data.msg);
+          $('#addSay').removeAttr('disabled');
+        }
+     },
+     error: function(data){
+        error(data.msg);
+        $('#addSay').removeAttr('disabled');
+     }
+   })
+})
+$('#editSay').click(function(){
+   var s_id = $('#sid').val();
+   var s_root = $('#root').val();
+   var s_content = $('#desc').val();
+   var s_show= $("input[name='visibility']:checked").val();
+   if(s_content == ''){
+     error("内容不能为空");
+     return false;
+   }
+   if(s_show == ''){
+     error('请选择公开度');
+     return false;
+   }
+   $('#editSay').attr('disabled',true);
+   $.ajax({
+     url: '/Admin/Say/modify',
+     type: 'post',
+     async: true,
+     data: {'s_id':s_id, 's_content':s_content, 's_show':s_show, 's_root':s_root},
+     success: function(data){
+        console.log(data);
+        if(data.error == 0){
+          success('',data.msg,'/Admin/Say/sayList');
+        }else{
+          error(data.msg);
+          $('#editSay').removeAttr('disabled');
+        }
+     },
+     error: function(data){
+        error(data.msg);
+        $('#editSay').removeAttr('disabled');
+     }
+   })
+})
+</script>
+</body>
+</html>
+

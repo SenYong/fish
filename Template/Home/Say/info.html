@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>小鱼博客</title>
+ <meta name="关键字" content="">
+ <meta name="Keywords" content="个人网站,小鱼博客,小鱼网站,小鱼,个人网站">
+ <meta name="description" content="小鱼博客是一个分享技术文章、个人生活的网站">
+ <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+ <link href="__CSS__/buju.css" rel="stylesheet">
+ <link href="__CSS__/index.css" rel="stylesheet">
+ <script type="text/javascript" src="__JS__/jquery.min.js"></script>
+ <script type="text/javascript" src="__JS__/sliders.js"></script>
+</head>
+<body>
+  <include file="Public:header" />
+  <article>
+    <div class="l_box f_l">
+	   <div class="topnews">
+  	    <h2> 
+    	     <a href="{:U('/say')}">畅所欲言</a>  >  详情
+  	    </h2>
+        <input type="hidden" value="{$info.s_id}" id="sc_pid">
+        <input type="hidden" value="" id="sc_name">
+        <input type="hidden" value="" id="sc_img">
+        <div class="mood">
+          <span class="tutime">{$info.s_time|date="Y-m-d H:i:s",###}</span>
+          <p class="p1"><a href="#" class="cont">{$info.s_content}</a></p>
+          <p class="p2"><a class="span1" href="">浏览({$info.s_hit})</a><a class="span2" href="">评论({$info.s_num})</a></p>
+        </div>
+        <!-- JiaThis Button BEGIN -->
+        <div class="jiathis_style" style="margin-top:40px">
+            <span class="jiathis_txt">分享到：</span>
+            <a class="jiathis_button_qzone"></a>
+            <a class="jiathis_button_tsina"></a>
+            <a class="jiathis_button_weixin"></a>
+            <a class="jiathis_button_cqq"></a>
+            <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+            <div class="clear"></div>
+        </div>
+        <script type="text/javascript" >
+        var jiathis_config={
+          summary:"",
+          shortUrl:false,
+          hideMore:true
+        }
+        </script>
+        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+        <!-- JiaThis Button END -->
+        <notempty name="prev['s_id']">
+           <div class="nextpage">
+              <b>上一条:</b>
+              <a href="{:U('/sayinfo-'.$prev['s_id'])}">{$prev.s_content}</a>
+           </div>
+        </notempty>
+        <notempty name="next['s_id']">
+          <div class="nextpage">
+            <b>下一条:</b>
+            <a href="{:U('/sayinfo-'.$next['s_id'])}">{$next.s_content}</a>
+          </div>
+        </notempty>
+        <div class="comment">
+            <div class="com_form">
+              <textarea class="input" id="saytext" name="saytext"></textarea>
+              <p>
+                <input type="button" class="sub_btn" value="提交">
+                <span class="emotion"></span>
+              </p>
+            </div>
+        </div>
+        <if condition="($num gt 0)">
+          <div class="board">
+            <div class="titles">
+               <div class="lt">评论</div>
+               <div class="rt"><span>{$num}</span>人参与,<span>{$num}</span>条评论</div>
+            </div>
+            <volist name="list" id="vo">
+               <div class="bList">
+                   <div class="lItem">
+                       <img src="{$vo.sc_img}" class="logo">
+                       <div class="lCont">
+                          <p class="p1">
+                            <span class="s1"><b class="name">{$vo.sc_name}</b>[{$vo.sc_ip|getIp}]</span>
+                            <span class="s2">{$vo.sc_time|getTime}</span>
+                          </p>
+                          <p class="p2">{$vo.sc_content|reFace}</p>
+                       </div>
+                   </div>
+                   <notempty name="vo['sc_retime']">
+                   <div class="lItem rItem">
+                     <img src="{$vo.sc_reimg}" class="logo">
+                     <div class="lCont">
+                        <p class="p1">
+                          <span class="s1"><b class="name">{$vo.sc_rename}</b>回复<b class="name1">{$vo.sc_name}</b></span>
+                          <span class="s2">{$vo.sc_retime|getTime}</span>
+                        </p>
+                        <p class="p2">{$vo.sc_recontent|reFaceMy}</p>
+                     </div>
+                   </div>
+                   </notempty>
+                </div>
+            </volist>
+          </div>
+        </if>
+	   </div><!--topnews-->
+	  </div><!--l_box f_l-->
+    <include file="Public:right" />
+  </article>
+<include file="Public:footer" />
+</body>
+</html>
+<script type="text/javascript" src="__JS__/jquery.qqFace.js"></script>
+<script type="text/javascript">
+$(function(){
+  $('.emotion').qqFace({
+    id : 'facebox', 
+    assign:'saytext', 
+    path:'/Public/Home/arclist/'
+  });
+
+  $('.sub_btn').click(function(){
+      var sc_pid = $("#sc_pid").val();
+      var sc_name = $('#sc_name').val();
+      var sc_img = $("#sc_img").val();
+      var saytext = $('#saytext').val();
+      if(sc_name == ''){
+        sc_name = '游客';
+      }
+      if(sc_img == ''){
+        sc_img = '/Public/Home/img/default.png';
+      }
+      if(saytext == ''){
+        alert('评论内容不能为空');
+        return false;
+      }
+      $('.sub_btn').attr('disable',true);
+      $.ajax({
+        url: '/Admin/Say/sayContent',
+        type: 'post',
+        async: true,
+        data: {'sc_pid':sc_pid, 'sc_name':sc_name, 'sc_img':sc_img, 'sc_content':saytext},
+        success: function(data){
+            if(data.error == 0){
+              window.location.reload();
+            }else{
+              alert(data.msg);
+              $('#btn').removeAttr('disabled');
+            }
+         },
+         error: function(data){
+            alert(data.msg);
+            $('#btn').removeAttr('disabled');
+         }
+      })
+  })
+});
+function replace_em(str){
+  str = str.replace(/\</g,'&lt;');
+  str = str.replace(/\>/g,'&gt;');
+  str = str.replace(/\n/g,'<br/>');
+  str = str.replace(/\[em_([0-9]*)\]/g,'<img src="/Public/Home/arclist/$1.gif" border="0"/>');
+  return str;
+}
+</script>
+
